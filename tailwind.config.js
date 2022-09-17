@@ -18,8 +18,8 @@ module.exports = {
     extend: {
       fontFamily: {
         "dancing": ['Dancing Script, cursive'],
-        "catamaran": ['Catamaran, sans-serif'],
-        "garamond": ['EB Garamond, serif']
+        "garamond": ['EB Garamond, serif'],
+        "relaway": ['Raleway, sans-serif']
       },
       colors: {
         'main': '#288dab',

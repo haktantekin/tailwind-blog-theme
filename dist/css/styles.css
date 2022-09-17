@@ -367,23 +367,34 @@ video {
   max-width: 100%;
   height: auto;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Dancing+Script&family=EB+Garamond&family=Raleway:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Raleway:wght@300&display=swap');
 
   body{
     font-family: 'Raleway', sans-serif;
   }
 
   h1 {
-  font-family: Dancing Script, cursive;
+  font-family: EB Garamond, serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(6 6 6 / var(--tw-text-opacity));
 }
   h2 {
-  font-family: Dancing Script, cursive;
+  font-family: EB Garamond, serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(6 6 6 / var(--tw-text-opacity));
+}
+  h3 {
+  padding-right: 1rem;
+  font-family: EB Garamond, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(6 6 6 / var(--tw-text-opacity));
 }
@@ -576,6 +587,9 @@ video {
 .bottom-5 {
   bottom: 1.25rem;
 }
+.m-1 {
+  margin: 0.25rem;
+}
 .mr-auto {
   margin-right: auto;
 }
@@ -594,8 +608,17 @@ video {
 .mb-7 {
   margin-bottom: 1.75rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .block {
   display: block;
@@ -636,8 +659,23 @@ video {
 .h-full {
   height: 100%;
 }
+.h-72 {
+  height: 18rem;
+}
 .h-52 {
   height: 13rem;
+}
+.h-60 {
+  height: 15rem;
+}
+.h-96 {
+  height: 24rem;
+}
+.h-64 {
+  height: 16rem;
+}
+.max-h-96 {
+  max-height: 24rem;
 }
 .w-2 {
   width: 0.5rem;
@@ -647,6 +685,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-1 {
+  width: 0.25rem;
 }
 .border-collapse {
   border-collapse: collapse;
@@ -660,8 +701,20 @@ video {
 .grid-flow-col {
   grid-auto-flow: column;
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
+}
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -686,6 +739,16 @@ video {
 }
 .gap-6 {
   gap: 1.5rem;
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden {
   overflow: hidden;
