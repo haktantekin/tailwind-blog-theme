@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css?family=EB+Garamond%3A300%2C400%2C400i%2C500%2C500i%2C600%2C700%7CEB+Garamond%3Aital%3A300%2C400%2C400i%2C500%2C500i%2C600%2C700%7CDancing+Script%3A300%2C400%2C400i%2C500%2C500i%2C600%2C700%7CRaleway%3A300%2C400%2C400i%2C500%2C500i%2C600%2C700&subset=latin-ext&display=swap&ver=1.0.0");
+
+  body {
+    font-family: Raleway, sans-serif;
+  }
+}
