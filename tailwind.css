@@ -4,6 +4,10 @@
 
 @layer base {
   @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Dancing+Script&family=EB+Garamond&display=swap');
+
+  h1{
+    @apply text-3xl font-dancing text-dark
+  }
 }
 
 @layer components {

@@ -9,6 +9,11 @@ module.exports = {
     debugScreens: {
       position: ['top', 'left']
     },
+    screens: {
+      mobile: "640px",
+      tablet: "960px",
+      desktop: "1280px",
+    },
     extend: {
       fontFamily: {
         "dancing": ['Dancing Script, cursive'],
