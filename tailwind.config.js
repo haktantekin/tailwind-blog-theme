@@ -17,9 +17,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        "dancing": ['Dancing Script, cursive'],
         "garamond": ['EB Garamond, serif'],
-        "relaway": ['Raleway, sans-serif']
+        "relaway": ['Raleway, sans-serif'],
+        "noto": ['Noto Serif, serif'],
       },
       colors: {
         'main': '#288dab',

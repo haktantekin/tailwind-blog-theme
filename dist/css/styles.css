@@ -367,7 +367,7 @@ video {
   max-width: 100%;
   height: auto;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Raleway:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif:wght@400;700&family=Raleway:wght@300&display=swap');
 
   body{
     font-family: 'Raleway', sans-serif;
@@ -391,7 +391,7 @@ video {
 }
   h3 {
   padding-right: 1rem;
-  font-family: EB Garamond, serif;
+  font-family: Noto Serif, serif;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
@@ -608,14 +608,14 @@ video {
 .mb-7 {
   margin-bottom: 1.75rem;
 }
-.mb-4 {
-  margin-bottom: 1rem;
-}
 .mt-5 {
   margin-top: 1.25rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -740,6 +740,22 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.gap-y-4 {
+  row-gap: 1rem;
+}
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+.gap-y-7 {
+  row-gap: 1.75rem;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -822,9 +838,6 @@ video {
 }
 .font-garamond {
   font-family: EB Garamond, serif;
-}
-.font-dancing {
-  font-family: Dancing Script, cursive;
 }
 .text-5xl {
   font-size: 3rem;

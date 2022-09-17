@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Raleway:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif:wght@400;700&family=Raleway:wght@300&display=swap');
 
   body{
     font-family: 'Raleway', sans-serif;
@@ -16,7 +16,7 @@
     @apply text-3xl font-garamond font-bold text-dark
   }
   h3{
-    @apply text-2xl font-garamond font-medium text-dark pr-4
+    @apply text-2xl font-noto font-medium text-dark pr-4
   }
 
   section, header, nav{
