@@ -2,21 +2,60 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalori Hesabı</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalori Hesabı</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="scripts/plugins/webfont.js"></script>
+  <script src="scripts/natkah.js"></script>
 </head>
 
-<body class="bg-white">
-    <header>
-        <div class="container mx-auto">
-            <div class="flex">
-                Haktan
+<body>
+  <section class="bg-dark w-100 h-10 items-center flex justify-center">
+    <div class="container">
+      <div class="flex items-center justify-center">
+        <div class="mr-auto h-auto inline-block relative">
+          <form method="get">
+            <input class="bg-transparent border-0 text-white border-b-2 border-b-white border-dashed outline-none p-1" type="text" placeholder="Arama Yap..." autocomplete="off" list="searchtext_s"
+              name="s" />
+            <div class="input-button">
+              <button class="absolute right-3 top-2 h-4 w-2 flex items-center justify-center text-white" type="button">
+                <i class="fa fa-search"></i>
+              </button>
             </div>
+          </form>
         </div>
-    </header>
+
+        <div class="flex justify-end">
+          <ul class="flex gap-4 justify-center">
+            <li>
+              <a href="https://www.facebook.com/kalorihesabi/" target="_blank" rel="nofollow"><i
+                  class="fa-brands fa-facebook-f text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kalorihesabicom/" target="_blank" rel="nofollow"><i
+                  class="fa-brands fa-instagram text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://tr.pinterest.com/kalorihesabi/" target="_blank" rel="nofollow"><i
+                  class="fa-brands fa-pinterest text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@kalorihesabicom" target="_blank" rel="nofollow"><i
+                  class="fa-solid fa-link text-white"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <header class="h-28 justify-center  text-center flex items-center">
+    <div class="font-garamond text-dark text-5xl">
+      <a href="/"><img class="w-52" src="/dist/public/img/logo.png" /></a>
+    </div>
+  </header>
 </body>
 
 </html>

@@ -5,11 +5,11 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
-    cssnano({
-      preset: 'default'
-    }),
-    purgecss({
-      content: ['./dist/**/*.css']
-    })
+    // cssnano({
+    //   preset: 'default'
+    // }),
+    // purgecss({
+    //   content: ['./dist/**/*.css']
+    // })
   ]
 }

@@ -1,19 +1,26 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
   './dist/**/*.html',
-  './dist/**/*.css'],
+  './dist/**/*.css',
+  './dist/**/*.js'],
   theme: {
     debugScreens: {
-      position: ['top', 'left'],
+      position: ['top', 'left']
     },
     extend: {
       fontFamily: {
-        headline: ['Oswald']
+        "dancing": ['Dancing Script, cursive'],
+        "catamaran": ['Catamaran, sans-serif'],
+        "garamond": ['EB Garamond, serif']
        },
        colors: {
-        mainColor: '#288dab'
-       } 
-    },
+        'main': '#288dab',
+        'dark': '#060606',
+        'gray': '#eeeeee',
+      }
+    }
   },
   variants: {
     extend: {},
