@@ -257,16 +257,16 @@ function calculateKey() {
 }
 // calculateKey();
 
-// function more() {
-//   if (document.querySelector('.category-description').style.height !== "100%") {
-//     document.querySelector('.category-description').style.height = "100%";
-//     document.querySelector('#moreBtn').innerHTML = "Daha Az...";
-//   } else {
-//     document.querySelector('.category-description').style.height = "200px";
-//     document.querySelector('#moreBtn').innerHTML = "Daha Fazla...";
-//     window.scrollTo(0, 0);
-//   }
-// }
+function more() {
+  if (document.querySelector('.category-description').style.height !== "100%") {
+    document.querySelector('.category-description').style.height = "100%";
+    document.querySelector('#moreBtn').innerHTML = "Daha Az...";
+  } else {
+    document.querySelector('.category-description').style.height = "200px";
+    document.querySelector('#moreBtn').innerHTML = "Daha Fazla...";
+    window.scrollTo(0, 0);
+  }
+}
 
 // function caltoKilo(valNum) {
 //   if (valNum == null || valNum == "" || valNum === "NaN") {

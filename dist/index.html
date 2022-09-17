@@ -13,12 +13,12 @@
 </head>
 
 <body>
-  <section class="bg-dark w-100 h-10 items-center flex justify-center">
+  <section class="bg-dark h-16">
     <div class="container">
       <div class="flex items-center justify-center">
         <div class="mr-auto h-auto inline-block relative">
           <form method="get">
-            <input class="bg-transparent border-0 text-white border-b-2 border-b-white border-dashed outline-none p-1"
+            <input class="placeholder:text-white bg-transparent border-0 text-white border-b border-b-white border-dashed outline-none p-1"
               type="text" placeholder="Arama Yap..." autocomplete="off" list="searchtext_s" name="s" />
             <div class="input-button">
               <button class="absolute right-1 top-2 h-4 w-2 flex items-center justify-center text-white" type="button">
@@ -51,12 +51,12 @@
       </div>
     </div>
   </section>
-  <header class="h-28 justify-center  text-center flex items-center">
+  <header class="h-28 text-center">
     <div class="font-garamond text-dark text-5xl">
       <a href="/"><img class="w-52" src="/dist/public/img/logo.png" /></a>
     </div>
   </header>
-  <nav class="flex justify-center items-center p-4 border-gray border-dashed border-b-2 border-t-2">
+  <nav class="p-4 border-gray border-dashed border-b-2 border-t-2">
     <div class="container">
       <ul class="flex justify-center items-center gap-5">
         <li>
@@ -77,24 +77,25 @@
       </ul>
     </div>
   </nav>
-  <section class="flex justify-center items-center flex-col pt-7">
+  <section class="flex-col pt-7">
     <div class="container">
-      <h1 class="mb-7 font-garamond border-gray border-dashed border-b-2 pb-4">
+      <h1 class=" font-garamond border-gray border-dashed border-b-2 pb-4 mb-10">
         Kalori Hesabı
       </h1>
     </div>
     <div class="container">
-      <div class="w-full max-h-96  flex gap-1 mb-2">
+      <div class="w-full h-[40rem] flex gap-1 mb-2">
         <div class="relative w-full">
-          <img class="w-full  max-h-96 object-cover"
-            src="https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <img class="w-full h-[40rem] object-cover"
+            src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <a href="javascript:;"
-            class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-60 before:top-0">
+            class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0">
 
             <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
               <h2 class="font-garamond text-white text-3xl font-semibold">Kaç Kalori</h2>
               <p class="text-white text-1xl mt-3">
-                Her gün tam olarak kaç kalori yemelisin? Kilo almak ya da vermek istiyorsan besinlerin kalorilerini öğren.
+                Her gün tam olarak kaç kalori yemelisin? Kilo almak ya da vermek istiyorsan besinlerin kalorilerini
+                öğren.
               </p>
             </div>
           </a>
@@ -106,7 +107,7 @@
             <img class="w-full h-full gap-1 object-cover"
               src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1x, https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 2x" />
             <a href="javascript:;"
-              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-60 before:top-0">
+              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
                 <h2 class="font-garamond text-white text-3xl font-semibold">Kilo Aldırır mı?</h2>
               </div>
@@ -116,9 +117,9 @@
             <img class="w-full object-cover"
               src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             <a href="javascript:;"
-              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-60 before:top-0">
+              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
-                <h2 class="font-garamond text-white text-3xl font-semibold">Vegan mı?</h2>
+                <h2 class="font-garamond text-white text-3xl font-semibold">Vegan mıdır?</h2>
               </div>
             </a>
           </div>
@@ -126,7 +127,7 @@
             <img class="w-full object-cover"
               src="https://images.pexels.com/photos/6303718/pexels-photo-6303718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             <a href="javascript:;"
-              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-60 before:top-0">
+              class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
                 <h2 class="font-garamond text-white text-3xl font-semibold">Kilo Hesaplama Araçları</h2>
               </div>
@@ -136,17 +137,17 @@
       </div>
     </div>
   </section>
-  <section class="flex justify-center items-center flex-col pt-7 mt-4">
+  <section class="flex-col pt-7 mt-4">
     <div class="container">
-      <h1 class="mb-7 font-garamond border-gray border-dashed border-b-2 pb-4">
+      <h2 class="mb-7 font-garamond border-gray border-dashed border-b-2 pb-4">
         Kalori Hesaplama Araçları
-      </h1>
+      </h2>
       <div class="grid grid-col-3 grid-flow-col gap-4 pt-3 text-center">
         <div class="">
-         <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
-          <i class="fa-solid fa-calculator text-5xl text-darkgray"></i>
-           Kalori Hesaplama
-         </a>
+          <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
+            <i class="fa-solid fa-calculator text-5xl text-darkgray"></i>
+            Kalori Hesaplama
+          </a>
         </div>
         <div class="">
           <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
@@ -161,6 +162,59 @@
           </a>
         </div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="category-description block text-dark text-1xl overflow-hidden h-52 mt-4 mb-6">
+        <p>Günde yediğiniz kalori miktarını azaltmak etkili bir kilo verme yöntemi olabilir. Kalori Hesabı sizlere kilo
+          kontrolü konusunda yardımcı oluyor.<br><br> Bununla birlikte, yaşınız, cinsiyetiniz, bedeniniz ve aktivite
+          seviyeniz gibi çeşitli faktörlere bağlı olduğundan, tam olarak kaç kalori yemeniz gerektiğini bulmak zor
+          olabilir.<br></p> <strong> Kalori Nedir? </strong>
+        <p> Basitçe söylemek gerekirse, kalori enerjiyi ölçen bir birimdir. Kaloriler genellikle yiyecek ve içeceklerin
+          enerji içeriğini ölçmek için kullanılır. <br><br> Kilo vermek için, vücudunuzun her gün yaktığından daha az
+          kalori almanız gerekir. Tersine, kilo almak için harcadığınızdan daha fazla kalori tüketmeniz gerekir. <br><br>
+          Kilo kaybının “alınan kalori, alınan kalori ” kavramı basit görünse de, tıbbi teşhisler, hormonal değişiklikler,
+          genetik ve yaş dahil olmak üzere birçok faktörün kilo kaybına veya kilo verememesine katkıda bulunduğunu
+          unutmayın. <br><br> Kilo vermenize ve uzun vadede onu uzak tutmanıza yardımcı olacak sağlıklı bir diyet ve yaşam
+          tarzı planı geliştirmek, mevcut kalori ihtiyacınızı belirlemek ve buna karşılık daha az kalori tüketmekten çok
+          daha fazlasını gerektirir.</p> <strong> Ortalama kaç kalori yemelisiniz? </strong>
+        <p> Günde yemeniz gereken kalori sayısı, yaşınız, cinsiyetiniz, boyunuz, mevcut kilonuz, aktivite seviyeniz ve
+          metabolik sağlığınız gibi birçok faktöre bağlıdır. <br><br> Kilo vermeye çalışırken , normalde yaptığınızdan
+          daha az kalori tüketerek veya daha fazla egzersiz yaparak kalori açığı oluşturmanız önemlidir. Bazı insanlar,
+          fiziksel olarak daha aktif olurken biraz daha az yemek yiyerek ikisini birleştirmeyi tercih eder. <br><br> Yine
+          de, kilo vermeye çalışıyor olsanız bile, vücudunuza ihtiyaç duyduğu besinleri sağlamak için yeterli kalori
+          aldığınızdan emin olmanız önemlidir. <br><br> Herhangi bir kilo verme planının en önemli kısmı
+          sürdürülebilirliktir. Bu nedenle birçok uzman, sürdürülebilir kilo kaybını teşvik etmek için küçük kalorili
+          azalmalar önermektedir. <br><br> Örneğin, birçok moda diyet, kalori alımınızı günde yaklaşık 1.000-1.200 kalori
+          ile sınırlamanızı önerir; bu, çoğu sağlıklı yetişkin için yeterli değildir. <br><br> Kalori alımınızı çok büyük
+          ölçüde azaltmak, yalnızca birkaç ciddi yan etkiye neden olmakla kalmaz, aynı zamanda beslenme yetersizliği
+          riskinizi de artırır. Aynı şekilde uzun süreli kilo korumayı zorlaştıran metabolik değişikliklerle sonuçlanır.
+          <br><br> Kadınların kalori ihtiyaçları yaşlarına, boyutlarına ve aktivite seviyelerine bağlı olabilir. <br><br>
+          19-30 yaş arasındaki kadınların çoğu, kilolarını korumak için günde 2.000-2.400 kaloriye ihtiyaç duyar. <br><br>
+          31-59 yaş arasındaki kadınların enerji ihtiyaçları biraz daha düşüktür. Genel olarak, bu yaş grubundaki
+          kadınların vücut ağırlıklarını korumak için günde 1.800-2.200 kalori tüketmeleri gerekir. <br><br> 60 yaşın
+          üzerindeki kadınlar genellikle daha az kaloriye ihtiyaç duyar ve kilolarını korumak için genellikle günde
+          yaklaşık 1.600-2.000 kalori almaları gerekir. <br><br> İhtiyacınız olan tam kalori miktarının, ne kadar aktif
+          olduğunuza, ayrıca boyunuza, kilonuza ve sağlık durumunuza bağlı olarak bu aralığın üst veya alt sınırına
+          düşebileceğini veya hatta aşabileceğini unutmayın. <br><br> Ek olarak, bu tahminler , önemli ölçüde daha fazla
+          kaloriye ihtiyaç duyacakları için hamile veya emziren kişiler için geçerli değildir. <br><br> Kadınlarda olduğu
+          gibi erkeklerde de kalori ihtiyacı çeşitli faktörlere göre değişiklik gösterebilir. <br><br> Amerikalılar için
+          en son Diyet Rehberi, 19-30 yaş arasındaki erkeklerin kilolarını korumak için günde 2.400-3.000 kalori tüketmesi
+          gerektiğini tahmin ediyor. <br><br> Yaşlandıkça enerji ihtiyacı azalır. Aslında, 31-59 yaş arasındaki erkekler
+          kilolarını korumak için günde yaklaşık 2.200-3.000 kaloriye ihtiyaç duyarken, 60 yaşın üzerindeki erkekler
+          genellikle 2.000-2.600 kaloriye ihtiyaç duyar. <br><br> Çok aktif olan veya belirli sağlık koşullarına sahip
+          olan erkekler daha fazla kalori gerektirebilir. Bu aralıklar içinde ihtiyacınız olan sayı da boyunuza ve
+          kilonuza göre değişir. <br><br> Çocukların yaşlarına, boyutlarına ve aktivite seviyelerine göre çok çeşitli
+          kalori ihtiyaçları vardır. <br><br> Çocukların ve gençlerin enerji ihtiyaçları cinsiyetlerine ve yaşlarına göre
+          değişir. 3 yaşında bir çocuk sadece 1.200 kaloriye ihtiyaç duyabilir, ancak bir genç 3.000 kaloriye daha yakın
+          bir ihtiyaç duyabilir. <br><br> Ancak, büyümekte olan çocuklar ve gençler için genellikle kalori saymaya gerek
+          olmadığını unutmayın. <br><br> Aslında, bir çocuğun kalori alımını azaltmak, beslenme eksiklikleri, yavaş büyüme
+          ve yiyeceklerle sağlıksız bir ilişki ya da yeme bozukluğu riskini artırabilir. <br><br> Kalorileri saymak
+          yerine, sağlıklı, besleyici yoğun yiyecekleri teşvik etmek, evde daha fazla yemek ve atıştırmalık pişirmek ve
+          çocuklar ve gençler için düzenli fiziksel aktiviteyi teşvik etmek en iyisidir. <br><br></p>
+        </div>
+        <button id="moreBtn" class="mb-6 border p-2 pl-4 pr-4 font-dancing border-dashed" onclick="more()">Daha Fazla...</button>
     </div>
   </section>
 </body>

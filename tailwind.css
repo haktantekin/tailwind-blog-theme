@@ -12,6 +12,13 @@
   h1{
     @apply text-3xl font-dancing text-dark
   }
+  h2{
+    @apply text-3xl font-dancing text-dark
+  }
+
+  section, header, nav{
+    @apply flex items-center justify-center
+  }
 }
 
 @layer components {
