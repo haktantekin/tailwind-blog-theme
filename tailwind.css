@@ -19,7 +19,7 @@
     @apply text-2xl font-noto font-medium text-dark pr-4
   }
 
-  section, header, nav{
+  section, header, nav, footer{
     @apply flex items-center justify-center
   }
 }
