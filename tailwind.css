@@ -25,7 +25,13 @@
 }
 
 @layer components {
-  .hak{
-    padding:0;
+  .sub-cat-list li{
+    padding:10px;
+    font-size:14px;
+    font-weight:600;
+    color:darkgray;
+  }
+  .sub-cat-list li a{
+    color:theme('colors.dark');
   }
 }
