@@ -9,6 +9,10 @@
     font-family: 'Raleway', sans-serif;
   }
 
+  *:hover{
+    transition: all 0.2s ease;
+  }
+
   h1{
     @apply text-3xl font-garamond font-bold text-dark
   }
@@ -33,5 +37,8 @@
   }
   .sub-cat-list li a{
     color:theme('colors.dark');
+  }
+  .sub-cat-list li a:hover{
+    font-weight:bold;
   }
 }
