@@ -602,6 +602,15 @@ video {
 .bottom-5 {
   bottom: 1.25rem;
 }
+.top-3 {
+  top: 0.75rem;
+}
+.top-5 {
+  top: 1.25rem;
+}
+.top-4 {
+  top: 1rem;
+}
 .m-1 {
   margin: 0.25rem;
 }
@@ -712,6 +721,12 @@ video {
 }
 .h-64 {
   height: 16rem;
+}
+.h-9 {
+  height: 2.25rem;
+}
+.h-11 {
+  height: 2.75rem;
 }
 .max-h-7 {
   max-height: 1.75rem;
