@@ -13,7 +13,7 @@
     @apply text-3xl font-garamond font-bold text-dark
   }
   h2{
-    @apply text-3xl font-garamond font-bold text-dark
+    @apply text-3xl font-garamond font-bold text-dark mb-7 border-gray border-dashed border-b-2 pb-4
   }
   h3{
     @apply text-2xl font-noto font-medium text-dark pr-4
