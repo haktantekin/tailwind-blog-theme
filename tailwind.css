@@ -14,18 +14,19 @@
   }
 
   h1{
-    @apply text-3xl font-garamond font-bold text-dark
+    @apply text-3xl font-garamond font-bold text-dark capitalize
   }
   h2{
-    @apply text-xl sm:text-2xl lg:text-3xl font-garamond font-bold text-dark mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-4
+    @apply text-xl sm:text-2xl lg:text-3xl font-garamond font-bold text-dark mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-4 capitalize
   }
   h3{
-    @apply text-xl sm:text-xl lg:text-2xl font-noto font-medium text-dark pr-4
+    @apply text-xl sm:text-xl lg:text-lg font-noto font-medium text-dark pr-4 capitalize
   }
 
   section, nav, footer{
     @apply flex items-center justify-center pl-3 pr-3 lg:p-0
   }
+
   header{
     @apply md:flex md:items-center md:justify-center pl-5 pr-5 md:p-0
   }
@@ -33,18 +34,37 @@
 
 @layer components {
   .sub-cat-list li{
-    font-size:14px;
-    font-weight:600;
-    color:darkgray;
-    padding-bottom:10px;
-    @media (min-width:768px){
-      padding:10px;
-    }
+    @apply pb-2 font-semibold text-dark text-xs;
   }
+
   .sub-cat-list li a{
-    color:theme('colors.dark');
+    @apply text-dark
   }
+
   .sub-cat-list li a:hover{
-    font-weight:bold;
+    @apply font-bold
+  }
+
+  .sub-list h2{
+    @apply text-xl sm:text-xl lg:text-2xl font-medium capitalize border-0
+  }
+
+  footer nav li {
+    @apply mb-2
+  }
+
+  ul.page-numbers{
+    @apply inline-flex mb-7 columns-1 justify-center flex-row flex-wrap items-center gap-2
+  }
+  .page-numbers{
+    @apply mt-8 md:mt-0
+  }
+  
+  .page-numbers li a{
+    @apply text-dark border border-dark w-10 h-10 text-center font-semibold text-sm rounded flex justify-center items-center
+  }
+
+  .page-numbers li span[aria-current=page]{
+    @apply bg-dark text-white w-10 h-10 text-center text-sm rounded flex justify-center items-center font-bold
   }
 }
