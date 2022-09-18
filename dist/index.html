@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <section class="bg-dark h-16">
+  <section class="bg-dark h-auto pl-5 pr-5 lg:pl-0 lg:pr-0 lg:h-16">
     <div class="container">
       <div class="flex items-center justify-center">
         <div class="mr-auto h-auto inline-block relative">
           <form method="get">
             <input
-              class="placeholder:text-white bg-transparent border-0 text-white border-b border-b-white border-dashed outline-none p-1 text-xs h-11"
+              class="placeholder:text-white bg-transparent border-0 text-white pt-3 outline-none p-1 text-xs h-11"
               type="text" placeholder="Arama Yap..." autocomplete="off" list="searchtext_s" name="s" />
             <div class="input-button">
               <button class="absolute right-1 top-4 h-4 w-2 flex items-center justify-center text-white" type="button">
@@ -52,14 +52,17 @@
       </div>
     </div>
   </section>
-  <header class="h-28 text-center">
-    <div class="font-garamond text-dark text-5xl">
-      <a href="/"><img class="w-52" src="/dist/public/img/logo.png" /></a>
+  <header class="h-28 md:h-28 text-left md:text-center flex justify-between md:justify-center items-center">
+    <div>
+      <a href="/"><img class="w-36 md:w-52" src="/dist/public/img/logo.png" /></a>
+    </div>
+    <div class="flex md:hidden">
+      <div class="nav-icon js-nav-icon" onclick="mobileButton()"> <i class="fas fa-ellipsis-v"></i></div>
     </div>
   </header>
-  <nav class="p-4 border-gray border-dashed border-b-2 border-t-2 hover:border-black hover:transition-all hover:ease-in-out">
+  <nav class="p-4 border-gray border-dashed border-b-2 border-t-2 hover:border-black hover:transition-all hover:ease-in-out hidden md:flex js-top-nav">
     <div class="container">
-      <ul class="flex justify-center items-center gap-5">
+      <ul class="flex justify-center items-center gap-5 flex-col md:flex-row">
         <li>
           <a class="hover:font-bold" href="javsacript:;">Kaç Kalori</a>
         </li>
@@ -85,16 +88,16 @@
       </h1>
     </div>
     <div class="container">
-      <div class="w-full h-[40rem] flex gap-1 mb-2">
+      <div class="w-full h-[20rem] md:h-[40rem] flex gap-1 mb-2">
         <div class="relative w-full">
-          <img class="w-full h-[40rem] object-cover"
+          <img class="w-full h-[20rem] md:h-[40rem] object-cover"
             src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <a href="javascript:;"
             class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0 hover:before:bg-opacity-10">
 
             <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
-              <h2 class="text-white md:text-3xl sm:text-2xl font-semibold border-none pb-0 mb-0">Kaç Kalori</h2>
-              <p class="text-white md:text-1xl sm:text-sm mt-3">
+              <h2 class="text-white font-semibold border-none pb-0 mb-0">Kaç Kalori</h2>
+              <p class="text-white text-xs mt-3">
                 Her gün tam olarak kaç kalori yemelisin? Kilo almak ya da vermek istiyorsan besinlerin kalorilerini
                 öğren.
               </p>
@@ -103,14 +106,14 @@
         </div>
       </div>
       <div class="flex gap-2">
-        <div class="grid gap-2 grid-cols-3">
+        <div class="grid gap-2 grid-cols-1 md:grid-cols-3">
           <div class="w-full relative">
             <img class="w-full h-full gap-1 object-cover"
               src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1x, https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 2x" />
             <a href="javascript:;"
               class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0 hover:before:bg-opacity-10">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
-                <h2 class="text-white text-3xl font-semibold border-none pb-0 mb-0">Kilo Aldırır mı?</h2>
+                <h2 class="text-white font-semibold border-none pb-0 mb-0">Kilo Aldırır mı?</h2>
               </div>
             </a>
           </div>
@@ -120,7 +123,7 @@
             <a href="javascript:;"
               class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0 hover:before:bg-opacity-10">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
-                <h2 class="text-white text-3xl font-semibold border-none pb-0 mb-0">Vegan mıdır?</h2>
+                <h2 class="text-white font-semibold border-none pb-0 mb-0">Vegan mıdır?</h2>
               </div>
             </a>
           </div>
@@ -130,7 +133,7 @@
             <a href="javascript:;"
               class="block w-full h-full before:bg-black before:w-full before:h-full before:absolute before:bg-opacity-40 before:top-0 hover:before:bg-opacity-10">
               <div class="absolute bottom-5 p-10 flex items-left justify-end flex-col">
-                <h2 class="font-garamond text-white text-3xl font-semibold border-none pb-0 mb-0">Kilo Hesaplama
+                <h2 class="font-garamond text-white font-semibold border-none pb-0 mb-0">Kilo Hesaplama
                   Araçları</h2>
               </div>
             </a>
@@ -139,27 +142,27 @@
       </div>
     </div>
   </section>
-  <section class="flex-col pt-7 pb-7 mt-14 bg-gray">
+  <section class="flex-col pt-4 pb-4 md:pt-7 md:pb-7 mt-14 bg-gray">
     <div class="container">
       <h2>
-        Kalori Hesaplama Araçları
+        Kilo Hesaplama Araçları
       </h2>
-      <div class="grid grid-col-3 grid-flow-col gap-4 pt-3 text-center">
-        <div class="">
-          <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
-            <i class="fa-solid fa-calculator text-5xl text-darkgray"></i>
+      <div class="grid grid-flow-row md:grid-flow-col md:grid-cols-3 gap-4 pt-0 md:pt-3 text-center">
+        <div>
+          <a class="flex flex-col gap-2 md:gap-6 text-sm md:text-1xl text-darkgray" href="javascript:;">
+            <i class="fa-solid fa-calculator text-3xl md:text-5xl text-darkgray"></i>
             Kalori Hesaplama
           </a>
         </div>
-        <div class="">
-          <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
-            <i class="fa-solid fa-divide text-5xl text-darkgray"></i>
+        <div>
+          <a class="flex flex-col gap-2 md:gap-6 text-sm md:text-1xl text-darkgray" href="javascript:;">
+            <i class="fa-solid fa-divide text-3xl md:text-5xl text-darkgray"></i>
             İdeal Kilo Hesaplama
           </a>
         </div>
-        <div class="">
-          <a class="flex flex-col gap-6 text-1xl text-darkgray" href="javascript:;">
-            <i class="fa-solid fa-cheese text-5xl text-darkgray"></i>
+        <div>
+          <a class="flex flex-col gap-2 md:gap-6 text-sm md:text-1xl text-darkgray" href="javascript:;">
+            <i class="fa-solid fa-cheese text-3xl md:text-5xl text-darkgray"></i>
             Kalori/Kilo Hesaplama
           </a>
         </div>
@@ -171,7 +174,7 @@
       <h2 class="mb-7 border-gray border-dashed border-b-2 pb-4">
         <a href="javascript:;">Kaç Kalori?</a>
       </h2>
-      <div class="w-full grid gap-x-5 gap-y-12 grid-cols-3">
+      <div class="w-full grid gap-x-5 gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <div class="flex h-full flex-col">
           <a href="javascript:;" class="block w-full h-full">
             <picture alt="Pişmiş Dondurulmuş Mürekkep Balığı Kaç Kalori?">
@@ -330,11 +333,11 @@
   </section>
   <section class="flex-col pt-7 bg-gray pb-7 mt-12 mb-7">
     <div class="container">
-      <h2 class="mb-7 border-gray border-dashed border-b-2 pb-4">
+      <h2 class="mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-0 md:pb-4">
         <a href="javascript:;">Besinleri Gör</a>
       </h2>
       <div class="sub-cat-list">
-        <ul class="grid gap-2 grid-cols-5">
+        <ul class="grid gap-2 grid-cols-1 sm:grid-cols-3 lg:grid-cols-5">
           <li class="cat-item cat-item-36"><a
               href="https://kalorihesabi.com/kategori/kac-kalori/atistirmaliklarin-kalorileri/">Atıştırmalıkların
               Kalorileri</a> (13)</li>
@@ -413,12 +416,12 @@
       </div>
     </div>
   </section>
-  <section class="flex-col pt-7 mt-4">
+  <section class="flex-col pt-0 md:pt-7 mt-4">
     <div class="container">
       <h2 class="mb-7 border-gray border-dashed border-b-2 pb-4">
         <a href="javascript:;">Blog</a>
       </h2>
-      <div class="w-full grid gap-x-5 gap-y-12 grid-cols-3">
+      <div class="w-full grid gap-x-5 gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <div class="flex h-full flex-col">
           <a href="javascript:;" class="block w-full h-full">
             <picture alt="Pişmiş Dondurulmuş Mürekkep Balığı Kaç Kalori?">
@@ -628,7 +631,7 @@
   </section>
   <footer class="bg-gray w-full pt-11 pb-11 mt-7">
     <div class="container">
-      <div class="grid grid-cols-4">
+      <div class="grid grid-cols-1 md:grid-cols-4">
         <div class="">
           <a href="/"><img class="w-36" src="/dist/public/img/logo.png" /></a>
           <p class="text-xs mt-3 w-64">
@@ -654,8 +657,8 @@
             </li>
           </ul>
         </div>
-        <div class="">
-          <nav>
+        <div>
+          <nav class="block md:flex mt-4 md:mt-0 p-0 md:pl-3 md:pr-3">
             <div class="menu-header-container text-sm">
               <ul id="menu-header-1" class="menu">
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5352"><a
@@ -672,8 +675,8 @@
             </div>
           </nav>
         </div>
-        <div class="">
-          <nav class="text-center text-sm">
+        <div>
+          <nav class="text-left md:text-center text-sm block md:flex mt-4 md:mt-0 p-0 md:pl-3 md:pr-3">
             <div class="menu-info-container">
               <ul id="menu-info" class="menu">
                 <li id="menu-item-5442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5442">
@@ -694,7 +697,7 @@
           </nav>
         </div>
         <div>
-          <nav class="text-right text-sm">
+          <nav class="text-left md:text-right text-sm block md:flex mt-4 md:mt-0 p-0 md:pl-3 md:pr-3">
             <div class="menu-header-container">
               <ul id="menu-header-1" class="menu">
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5352"><a
@@ -708,7 +711,7 @@
           </nav>
         </div>
       </div>
-      <ul class="grid gap-2 grid-cols-7 mt-7 text-xs">
+      <ul class="grid gap-2 grid-cols-1 sm:grid-cols-5 lg:grid-cols-7 mt-7 text-xs">
         <li class="cat-item cat-item-36"><a
             href="https://kalorihesabi.com/kategori/kac-kalori/atistirmaliklarin-kalorileri/">Atıştırmalıkların
             Kalorileri</a> (13)</li>

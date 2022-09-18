@@ -3,14 +3,15 @@
 // Analytics
 
 // caltoKilo();
-// document.querySelector('.js-nav-icon').addEventListener('click', function () {
-//   let nav = document.querySelector('.js-top-nav');
-//   if (nav.style.display === "none") {
-//     nav.style.display = "block";
-//   } else {
-//     nav.style.display = "none";
-//   }
-// });
+
+function mobileButton(){
+  let nav = document.querySelector('.js-top-nav');
+  if (nav.style.display === "none") {
+    nav.style.display = "block";
+  } else {
+    nav.style.display = "none";
+  }
+}
 
 if (document.querySelectorAll('.category-description p').length < 2) {
   document.querySelectorAll('.category-description').forEach(function (el) {

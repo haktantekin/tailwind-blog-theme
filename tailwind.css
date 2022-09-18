@@ -17,23 +17,29 @@
     @apply text-3xl font-garamond font-bold text-dark
   }
   h2{
-    @apply text-3xl font-garamond font-bold text-dark mb-7 border-gray border-dashed border-b-2 pb-4
+    @apply text-xl sm:text-2xl lg:text-3xl font-garamond font-bold text-dark mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-4
   }
   h3{
-    @apply text-2xl font-noto font-medium text-dark pr-4
+    @apply text-xl sm:text-xl lg:text-2xl font-noto font-medium text-dark pr-4
   }
 
-  section, header, nav, footer{
-    @apply flex items-center justify-center
+  section, nav, footer{
+    @apply flex items-center justify-center pl-3 pr-3 lg:p-0
+  }
+  header{
+    @apply md:flex md:items-center md:justify-center pl-5 pr-5 md:p-0
   }
 }
 
 @layer components {
   .sub-cat-list li{
-    padding:10px;
     font-size:14px;
     font-weight:600;
     color:darkgray;
+    padding-bottom:10px;
+    @media (min-width:768px){
+      padding:10px;
+    }
   }
   .sub-cat-list li a{
     color:theme('colors.dark');

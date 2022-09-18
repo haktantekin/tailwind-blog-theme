@@ -11,9 +11,10 @@ module.exports = {
       position: ['top', 'left']
     },
     screens: {
-      mobile: "640px",
-      tablet: "960px",
-      desktop: "1280px",
+      'sm': '576px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1280px',
     },
     extend: {
       fontFamily: {
@@ -29,6 +30,7 @@ module.exports = {
       },
       height: {
         '128': '40rem',
+        '64': '20rem',
       }
     }
   },
