@@ -30,6 +30,10 @@
   header{
     @apply md:flex md:items-center md:justify-center pl-5 pr-5 md:p-0
   }
+
+  input, select{
+    @apply  focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none  text-base border border-gray
+  }
 }
 
 @layer components {
@@ -73,7 +77,7 @@
   }
 
   .lwptoc_header a{
-    @apply text-darkgray border-b-2 font-semibold border-dashed font-noto 
+    @apply text-darkgray font-semibold font-noto ml-2 text-xs
   }
   
   .lwptoc_header{
@@ -81,7 +85,7 @@
   }
 
   .lwptoc_itemWrap{
-    @apply bg-gray p-5 rounded-md text-left leading-7
+    @apply bg-gray p-5 rounded-md text-left leading-7 mt-6
   }
 
   .lwptoc_itemWrap a{
@@ -94,10 +98,6 @@
 
   .content-in h2{
     @apply text-xl sm:text-2xl lg:text-2xl
-  }
-
-  .other-post a {
-    @apply font-medium text-dark capitalize block mb-2 text-sm last:mb-0
   }
 
   .content-cal-form{
@@ -113,10 +113,10 @@
   }
 
   .content-cal-form-item input, .content-cal-form-item select{
-    @apply focus-visible:border-0 focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none p-3 mt-3 mb-3 text-base border border-gray
+    @apply p-3 mt-3 mb-3
   }
   .content-cal-table{
-    @apply flex flex-col gap-3
+    @apply flex flex-col gap-3 mb-7
   }
   .content-cal-list{
     @apply grid gap-5 justify-start items-center grid-cols-3 w-full odd:bg-gray

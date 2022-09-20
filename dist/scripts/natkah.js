@@ -21,16 +21,16 @@ if (document.querySelectorAll('.category-description p').length < 2) {
 
 function sidebar() {
   let sidebar = document.getElementById("sidebar");
-  let stop = (sidebar.offsetTop - 60);
+  let stop = (sidebar.offsetTop + 405);
 
 
   window.onscroll = function (e) {
     if (window.innerWidth > 991) {
       let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
       if (scrollTop >= stop) {
-        sidebar.className = 'fixed';
+        sidebar.className = 'fixed top-5 w-[15rem]';
       } else {
-        sidebar.className = '';
+        sidebar.className = 'w-3/4';
       }
     }
   }
@@ -127,7 +127,6 @@ let arr1 = [];
 document.querySelectorAll('.content-cal-list li').forEach(element => {
   if (parseFloat(element.innerText).toFixed(2) != "NaN") {
     if (parseFloat(element.innerText).toFixed(2) == '100.00' || parseFloat(element.innerText).toFixed(2) == '100 gr') {
-      debugger
       arr1.push(element.innerText);
     } else {
       arr1.push(parseFloat(element.innerText).toFixed(2));
@@ -159,7 +158,6 @@ if (document.querySelector('.content-cal-table')) {
 
   let selectUnit = document.querySelectorAll('.content-cal-form-item select')[0]
   let selectText;
-  debugger
   let unitTitle = document.querySelectorAll('.content-cal-list')[0].querySelector('li:nth-child(3)')
   
   unitTitle.innerText = document.querySelectorAll('.content-cal-form-item input')[0].value + ' ' + document.querySelectorAll('.content-cal-form-item select')[0].selectedOptions[0].text
