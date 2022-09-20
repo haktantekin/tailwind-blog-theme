@@ -32,7 +32,11 @@
   }
 
   input, select{
-    @apply  focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none  text-base border border-gray
+    @apply focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none text-base border border-gray
+  }
+
+  input[type="range"]::-webkit-slider-thumb{
+  @apply appearance-none h-4 w-4 bg-black rounded-3xl cursor-pointer    
   }
 }
 
@@ -128,5 +132,9 @@
 
   .content-cal-list:first-child{
     @apply border-b border-dark pt-3 pb-3 font-semibold bg-transparent
+  }
+
+  .content-in p a{
+    @apply font-noto font-bold pb-1 border-b border-dashed border-dark hover:bg-dark hover:text-white hover:pl-2 hover:pr-2 hover:pt-1 hover:border-0
   }
 }
