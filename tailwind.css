@@ -67,4 +67,66 @@
   .page-numbers li span[aria-current=page]{
     @apply bg-dark text-white w-10 h-10 text-center text-sm rounded flex justify-center items-center font-bold
   }
+
+  .lwptoc{
+    @apply mt-5 mb-5
+  }
+
+  .lwptoc_header a{
+    @apply text-darkgray border-b-2 font-semibold border-dashed font-noto 
+  }
+  
+  .lwptoc_header{
+    @apply mb-4
+  }
+
+  .lwptoc_itemWrap{
+    @apply bg-gray p-5 rounded-md text-left leading-7
+  }
+
+  .lwptoc_itemWrap a{
+    @apply font-bold text-dark capitalize
+  }
+
+  .content-in p{
+   @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8
+  }
+
+  .content-in h2{
+    @apply text-xl sm:text-2xl lg:text-2xl
+  }
+
+  .other-post a {
+    @apply font-medium text-dark capitalize block mb-2 text-sm last:mb-0
+  }
+
+  .content-cal-form{
+    @apply grid grid-cols-2 gap-5
+  }
+
+  .content-cal-form-item{
+    @apply flex flex-col gap-1
+  }
+
+  .content-cal-form-item label{
+    @apply text-sm font-semibold
+  }
+
+  .content-cal-form-item input, .content-cal-form-item select{
+    @apply focus-visible:border-0 focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none p-3 mt-3 mb-3 text-base border border-gray
+  }
+  .content-cal-table{
+    @apply flex flex-col gap-3
+  }
+  .content-cal-list{
+    @apply grid gap-5 justify-start items-center grid-cols-3 w-full odd:bg-gray
+  }
+
+  .content-cal-list li{
+    @apply p-3
+  }
+
+  .content-cal-list:first-child{
+    @apply border-b border-dark pt-3 pb-3 font-semibold bg-transparent
+  }
 }

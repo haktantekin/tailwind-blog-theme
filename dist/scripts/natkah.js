@@ -157,11 +157,12 @@ if (document.querySelector('.content-cal-table')) {
 
 // Kalori Hesabı Keypress
 
-// let selectUnit = document.querySelectorAll('.content-cal-form-item select')[0]
-// let selectText;
-// let unitTitle = document.querySelectorAll('.content-cal-list')[0].querySelector('li:nth-child(3)')
-
-// unitTitle.innerText = document.querySelectorAll('.content-cal-form-item input')[0].value + ' ' + document.querySelectorAll('.content-cal-form-item select')[0].selectedOptions[0].text
+  let selectUnit = document.querySelectorAll('.content-cal-form-item select')[0]
+  let selectText;
+  debugger
+  let unitTitle = document.querySelectorAll('.content-cal-list')[0].querySelector('li:nth-child(3)')
+  
+  unitTitle.innerText = document.querySelectorAll('.content-cal-form-item input')[0].value + ' ' + document.querySelectorAll('.content-cal-form-item select')[0].selectedOptions[0].text
 
 function keyPressInput() {
   document.querySelectorAll('.content-cal-form-item input')[0].addEventListener('keyup', function (e) {
@@ -256,7 +257,7 @@ function calculateKey() {
   keyPressInput();
   selectChange()
 }
-// calculateKey();
+ calculateKey();
 
 function more() {
   if (document.querySelector('.category-description').style.height !== "100%") {
@@ -269,10 +270,10 @@ function more() {
   }
 }
 
-// function caltoKilo(valNum) {
-//   if (valNum == null || valNum == "" || valNum === "NaN") {
-//     valNum = 7700;
-//   }
-//   document.getElementById("outputKilograms").innerHTML = valNum * 0.00013;
-// }
+function caltoKilo(valNum) {
+  if (valNum == null || valNum == "" || valNum === "NaN") {
+    valNum = 7700;
+  }
+  document.getElementById("outputKilograms").innerHTML = valNum * 0.00013;
+}
 
