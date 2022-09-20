@@ -12,7 +12,7 @@
   *:hover{
     transition: all 0.2s ease;
   }
-
+  
   h1{
     @apply text-3xl font-garamond font-bold text-dark capitalize
   }
@@ -73,7 +73,7 @@
   }
 
   .lwptoc{
-    @apply mt-5 mb-5
+    @apply mb-5
   }
 
   .lwptoc_header a{

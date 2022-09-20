@@ -84,7 +84,7 @@
   <section class="flex-col pt-0 md:pt-7 overflow-hidden">
     <div class="container">
       <h1 class="border-gray border-dashed border-b-2 pb-4">
-        Poşet Ton Balığı Kaç Kalori?
+        Kalori Hesaplama
       </h1>
       <div class="mt-5 mb-10 flex gap-4 text-darkgray text-xs">
         <div>
@@ -107,201 +107,61 @@
                 alt="Poşet Ton Balığı Kaç Kalori?">
             </picture>
           </div>
-
-
           <div class="content-in tracking-wide text-base font-relaway">
-            <div class="lwptoc lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1"
-              data-smooth-scroll-offset="24" data-lwptoc-initialized="1">
-              <div class="lwptoc_i">
-                <div class="lwptoc_header"> <b class="lwptoc_title">İçerik Özeti</b> <span class="lwptoc_toggle"> <a
-                      href="#" class="lwptoc_toggle_label" data-label="göster">gizle</a> </span></div>
-                <div class="lwptoc_items lwptoc_items-visible">
-                  <div class="lwptoc_itemWrap">
-                    <div class="lwptoc_item"> <a href="#Poset-Ton-baligi-Besin-Degeri"> <span
-                          class="lwptoc_item_label">Poşet Ton balığı Besin Değeri</span> </a></div>
-                    <div class="lwptoc_item"> <a href="#Poset-Ton-baligi-Kac-Kalori"> <span
-                          class="lwptoc_item_label">Poşet Ton balığı Kaç Kalori?</span> </a></div>
-                  </div>
-                </div>
+            <form id="form" class="flex justify-center flex-col gap-3" onsubmit="return false">
+              <div class="grid grid-cols-10">
+                  <label for="weight" class="grid col-span-3 lg:col-span-2 items-center">Kilonuz:</label>
+                  <input type="number" id="weight" placeholder="Örn: 72,5" step="0.01" required min="20" max="300" class="col-span-7 p-3">
+                  <div class="hidden lg:flex justify-center items-center">kg</div>
               </div>
-            </div>
-            <p>Leziz poşet ton balığı kaç kalori? Kalori hesabını yap, kalorisi ne öğren, kalori hesaplaması sonucunda
-              kalori değerlerini gör.</p>
-            <h2 id="poset-ton-baligi-besin-degeri"><span id="Poset-Ton-baligi-Besin-Degeri">Poşet Ton balığı Besin
-                Değeri</span></h2>
-            <p> <strong>Birim Seçiniz</strong></p>
-            <div class="content-cal-form">
-              <div class="content-cal-form-item"><label>Miktar</label> <input type="number" value="1"></div>
-              <div class="content-cal-form-item"><label>Birim</label> <select class="xselectmenu rad2"
-                  id="id_unit_select" name="unit_select" style="width: 100%;">
-                  <option data-amount="120.0000" data-calcium="0.0" data-calory="218.4" data-carbohydrt="0.72"
-                    data-cholestrl="0.0" data-fiber_td="0.0" data-iron="0.0" data-lipid_tot="9.72" data-potassium="0.0"
-                    data-protein="32.4" data-sodium="0.0" data-units_id="105" data-vit_a_iu="0.0" data-vit_c="0.0"
-                    selected="" value="117831">Paket</option>
-                  <option data-amount="1.0000" data-calcium="0.0" data-calory="1.82" data-carbohydrt="0.006"
-                    data-cholestrl="0.0" data-fiber_td="0.0" data-iron="0.0" data-lipid_tot="0.081" data-potassium="0.0"
-                    data-protein="0.27" data-sodium="0.0" data-units_id="187" data-vit_a_iu="0.0" data-vit_c="0.0"
-                    value="117832">Gram</option>
-                </select></div>
-            </div>
-            <div class="content-cal-table">
-              <ul class="content-cal-list head">
-                <li>Besin</li>
-                <li>100 gr</li>
-                <li>Paket</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Karbonhidrat (g)</span></li>
-                <li><span class="lbl_carb100" itemprop="carbohydrateContent">0.6</span></li>
-                <li>0.72</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Protein (g)</span></li>
-                <li><span class="lbl_prot100" itemprop="proteinContent">27.0</span></li>
-                <li>32.4</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Yağ (g)</span></li>
-                <li><span class="lbl_fat100" itemprop="fatContent">8.1</span></li>
-                <li>9.72</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Lif (g)</span></li>
-                <li><span class="lbl_lif100" itemprop="fiberContent">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Kolesterol (mg)</span></li>
-                <li><span class="lbl_cholestrl100" itemprop="cholesterolContent">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Sodyum (mg)</span></li>
-                <li><span class="lbl_sodium100" itemprop="sodiumContent">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Potasyum (mg)</span></li>
-                <li><span class="lbl_potassium100 bg-gray">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Kalsiyum (mg)</span></li>
-                <li><span class="lbl_calcium100">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Vitamin A (iu)</span></li>
-                <li><span class="lbl_vit_a_iu100">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Vitamin C (mg)</span></li>
-                <li><span class="lbl_vit_c100">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-              <ul class="content-cal-list">
-                <li><span>Demir</span></li>
-                <li><span class="lbl_iron100">0.0</span></li>
-                <li>0.0</li>
-              </ul>
-            </div>
-            <h2 id="tatli-biber-yesil-kac-kalori"><span id="Yesil-Tatli-Biber-Kac-Kalori">Yeşil Tatlı Biber Kaç
-                Kalori?</span></h2>
-            <p>Tatlı yeşil biberin 100 gramında 27 kalori bulunmaktadır. 1 adet (60 gr) tatlı yeşil biber 16 kaloridir.
-              Tatlı yeşil biberin 100 gramı 6.32 gram karbonhidrat, 1 gram protein, 0.21 gram yağ, 0.9 gram lif
-              içermektedir.</p>
-            <p>Patlıcan, domates ve patates gibi biber de Solanaceae bitki familyasına ait ve tür adı Capsicum annuum
-              olarak geçen bir bitki. Sadece tatlı biberler değil, kırmızı biber, acı biber, jalapeno biberi ve
-              diğerleri de dahil olmak üzere birçok farklı biber türü Capsicum annuum adıyla anılıyor.</p>
-            <h2><span id="Biberin-faydalari-nelerdir">Biberin faydaları nelerdir?</span></h2>
-            <p>Düşük kalorili olan biber hem lezzeti hem de sağlığa önemli katkılarıyla bilinen bitkilerden biri. Eşsiz
-              bir antioksidan&nbsp;kaynağı olan biberin sahip olduğu renk de sağladığı faydalar konusunda belirleyici
-              bir role sahip. Örneğin en çok tüketilen biber türlerinden biri olan taze yeşil biber sararıp turuncu ve
-              kırmızıya dönme şansı verilmeden hasat ediliyor. Yeşil biberlere kıyasla kırmızı biberde neredeyse 11 kat
-              daha fazla beta-karoten ve 1,5 kat daha fazla C vitamini bulunuyor. Antioksidan bakımından en zengin
-              sebzelerden biri olan taze biber yüksek oranda flavonoid (apigenin, hesperidin, isoscoparin, kaemferol,
-              apigenin), karotenoid (alfa-karoten, antheraxanthin, beta karoten, kapsantin, kapsorubin) ve
-              hidroksisinamik asit türevi (ferulik asit, klorojenik asit, sinamik asit, kumarik asit) içeriyor. Acı
-              biber türlerinde etken madde olarak keskin bir karaktere sahip bir alkaloid bileşiği olan kapsaisin
-              bulunuyor. Kapsaisin&nbsp;anti bakteriyel, anti kanserojen, analjezik ve anti-diyabetik özelliklere sahip
-              olmasının yanında, ayrıca obez bireylerde LDL kolesterol seviyelerini düşürdüğünün kanıtlandığı biliniyor.
-              Öte yandan taze kırmızı ve yeşil biber zengin bir C, A, B1 ve B6 vitamini kaynağı. Ayrıca potasyum,
-              molibden, manganez, fosfor, magnezyum ve yüksek miktarda lif içeriyor. Güçlü ve suda çözünen bir
-              antioksidan olan C vitamininin düzenli olarak tüketilmesi bağışıklığı güçlendirmeye ve vücuttaki zararlı,
-              serbest radikalleri temizlemeye yardımcı oluyor. Aynı zamanda insan vücudundaki kolajen sentezi için temel
-              ihtiyaç olan C vitamini, bu sayede kan damarlarının, cildin, organların ve kemiklerin bütünlüğünü korumaya
-              yardımcı oluyor.</p>
-            <h2><span id="Biberin-tarihcesi">Biberin tarihçesi</span></h2>
-            <p>Kuzey, Orta ve Güney Amerika ile Karayipler 'e özgü olan biber bu bölgelerin mutfağında asırlardır
-              baharat malzemesi olarak kullanılıyor. İlk olarak M.Ö. 7000’li yıllarda üretildiği bilinen biber 16. ve
-              17. yüzyıllarda İspanyol ve Portekizli kaşifler tarafından dünyanın geri kalanına tanıtılıyor ve günümüzde
-              dünyanın pek çok yerinde önemli bir ticari ürün olarak mutfaklarda yerini alıyor. Biberin ülkemize gelişi
-              15. yüzyılda Osmanlı İmparatorluğu dönemine dayanıyor. Farklı bölgelerle yapılan ticaretlerle Türk
-              mutfağına giren biber günümüzde Ege bölgesi başta olmak üzere, Marmara, Güney Anadolu ve Karadeniz
-              bölgelerinde yetiştiriliyor. Küresel biber üretiminde en üst sıralarda Çin, Meksika, Türkiye, Endonezya ve
-              İspanya yer alıyor.</p>
-            <h2><span id="Biber-nasil-yetistirilir">Biber nasıl yetiştirilir?</span></h2>
-            <p>Merkezinde beyaz plasentaya yapışan çok sayıda minik, beyaz veya krem
-              &ZeroWidthSpace;&ZeroWidthSpace;renkli, dairesel ve yassı tohumlara sahip olan biber farklı boyut ve
-              renklerde üretiliyor. Bazıları tatlı, bazıları oldukça acı olabilen biberlerin ekimi ilkbaharda yapılırken
-              hasadı tüketim amacına göre değişiklik gösteriyor. Biber yeşil renkteyken, tam olgunluğa eriştiğinde veya
-              kuruduğunda hasat edilebiliyor. Biber türlerinin çoğu yeşil renkte büyümeye başlıyor ve olgunlaşma
-              sürecinde renk değişimlerine uğruyor. Bu renk değişimleri sarı, turuncu, kırmızı, mor ve lila ve hatta
-              siyaha kadar gerçekleşebiliyor. Renkli biberler genellikle renk gelişimi için ekstra büyüme zamanı
-              gerektiğinden yeşil muadillerine göre daha pahalı oluyor. Bununla birlikte bazı biber çeşitlerinin
-              olgunlaşma sürecinde de yeşil kalabildiği ve bazı çeşitlerin de gelişim sürecinin&nbsp;çok erken döneminde
-              renk değişimlerinden etkilendiği görülebiliyor.</p>
-            <h2><span id="Biber-hangi-mevsimde-yenir">Biber hangi mevsimde yenir?</span></h2>
-            <p>Taze, dondurulmuş, kurutulmuş, konserve veya baharat formunda tüketilebilen biber salatadan makarnaya her
-              yiyeceğe eklenebiliyor. Mevsimi mayıs ve ekim ayları olsa da biberleri yılın her döneminde tezgahlarda
-              bulabilirsiniz.</p>
-            <h2><span id="Biber-secerken-nelere-dikkat-edilmeli">Biber seçerken nelere dikkat edilmeli?</span></h2>
-            <p>Biber seçerken canlı renklere sahip, diri ve lekesiz olanları tercih etmelisiniz. Biberlerin saplarının
-              yeşil ve taze görünümlü olmasına dikkat edin. Biberler büyüklüklerine göre ağır (kalın, iyi
-              şekillendirilmiş ve iyi nemlendirilmiş) ve yeterince sert olmalı. Yaralanmalar dahil çürüme belirtileri
-              olan biberlerden kaçınmalısınız. Birçok sebze için olgunluğa erişmiş olması yeterliyken bu kriter biberde
-              pek geçerli değil. Biberlerin olgunlaşmanın farklı aşamalarında farklı renk tonlarını alabildiğini
-              unutmayın.</p>
-            <h2><span id="Biber-nasil-saklanir">Biber nasıl saklanır?</span></h2>
-            <p>Bol miktarda C vitamini, B6 vitamini ve karotenoid içeren biber sıcağa karşı oldukça duyarlı bir besin.
-              Yıkanmamış taze biberleri buzdolabının sebze bölmesinde yaklaşık 7 ila 10 gün saklayabilirsiniz.
-              Biberlerin nemlerini korumak için sebze bölmesine nemli bir bez veya kağıt havlu ekleyebilirsiniz.
-              Biberleri buzdolabında saklamadan önce saplarını kesmemeye dikkat edin.<br> Tatlı biberleri haşlamadan da
-              dondurabilirsiniz. Hem besin içeriklerini hem de lezzetini korumak ve hava temasını önlemek için biberleri
-              bütün olarak dondurmak daha iyi.</p>
-            <p>Renk değiştirme sürecindeki biberleri satın aldıysanız buzdolabına koymak yerine oda sıcaklığında bir
-              veya iki gün bekletebilirsiniz. Yaklaşık yirmi derecelik bir oda sıcaklığında biberlerin renk değişimi
-              daha hızlı ilerleyebiliyor.</p>
-            <h2><span id="Biber-nasil-pisirilir">Biber nasıl pişirilir?</span></h2>
-            <p>Biberleri kesmeden önce soğuk su ile yıkayın. Sapını kesmek için bir soyma bıçağı kullanın ve yavaşça
-              çıkarın. Biberler çeşitli şekil ve boyutlarda kesilebiliyor. Kolayca kesmek ve parçalamak için&nbsp;önce
-              biberleri yarıya kadar ikiye bölün, çekirdeği ve tohumları temizleyin. Sonra istenen boyut ve şekilde
-              keserek damak tadınıza göre buharda, sote ya da kızartma tekniklerinden birini kullanarak pişirin. Biberin
-              beyaz iç kabuğu lezzet nedeniyle genellikle çıkarılıyor, ancak bu bölüm aslında flavonoidler bakımından
-              zengin olduğundan yenilmesi oldukça faydalı.</p>
-            <p>Pratik sunum önerileri olarak ton balığı ya da tavuk salatasına ince kıyılmış biber ekleyebilir, sağlıklı
-              bir tavuk veya deniz ürünlü sote yemeğinde biber ve soğan tercih edebilir, çorbada tavuk ya da et suyunda
-              pişmiş soğan, kabak ve kırmızı biberleri püre haline getirebilir veya farklı renkteki biberleri bir arada
-              kullanarak lezzetli ve göz alıcı bir biber salatası hazırlayabilirsiniz.</p>
-            <h2><span id="Biber-nelerle-iyi-gider">Biber nelerle iyi gider?</span></h2>
-            <p>Mevsiminde tüketilen biber domates, patlıcan, kabak gibi tüm yaz sebzeleriyle ve maydanoz, roka, dereotu
-              gibi yeşilliklerle lezzetli bir uyum sağlıyor. Ayrıca yoğurt, krema ve peynir gibi süt ürünleriyle beraber
-              de farklı lezzetler yakalayabilirsiniz.</p>
-            <h2><span id="Biber-yerine-ne-kullanilabilir">Biber yerine ne kullanılabilir?</span></h2>
-            <p>Yüksek miktarda C ve A vitamini içeren biber yerine C vitamini deposu olan yeşil yapraklı sebzeleri ya da
-              A vitamini bakımından zengin domates, salatalık, kabak ve ıspanak gibi sebzeleri tercih edebilirsiniz.</p>
-          </div>
-          <div class="other-post bg-gray p-5 rounded-md mt-6">
-            <strong class="pb-4 font-bold block">İlgili Konular</strong> 
-            <a class="font-medium text-dark capitalize block mb-2 text-sm last:mb-0"
-              href="https://kalorihesabi.com/kac-kalori/seftali-ve-kayisili-sutas-buyumix-kac-kalori/"
-              title="Şeftali ve Kayısılı Sütaş Büyümix Kaç Kalori?">Şeftali ve Kayısılı Sütaş Büyümix Kaç Kalori?</a> 
-              <a class="font-medium text-dark capitalize block mb-2 text-sm last:mb-0" 
-              href="https://kalorihesabi.com/kac-kalori/blueberry-yaban-mersini-kac-kalori/"
-              title="Blueberry/Yaban Mersini Kaç Kalori?">Blueberry/Yaban Mersini Kaç Kalori?</a> 
-              <a class="font-medium text-dark capitalize block mb-2 text-sm last:mb-0"
-              href="https://kalorihesabi.com/kac-kalori/ayva-kac-kalori/" title="Ayva Kaç Kalori?">Ayva Kaç Kalori?</a>
+              <div class="grid grid-cols-10">
+                  <label for="height" class="grid col-span-3 lg:col-span-2 items-center">Boyunuz:</label>
+                  <input type="number" id="height" placeholder="Örn: 160" step="0.01" required min="1" max="240" class="col-span-7 p-3"> 
+                  <div class="hidden lg:flex justify-center items-center">cm</div>
+              </div>
+              <div class="grid grid-cols-10">
+                  <label for="age" class="grid col-span-3 lg:col-span-2 items-center">Yaşınız:</label>
+                  <input type="number" id="age" placeholder="Örn: 25" step="1" required min="1" max="120" class="col-span-7 p-3">
+                  <div class="hidden lg:flex justify-center items-center">yaşım</div>
+              </div>
+              <div class="grid grid-cols-10">
+                  <label for="gender" class="grid col-span-3 lg:col-span-2 items-center">Cinsiyetiniz:</label>
+                  <select id="gender" required class="col-span-7 p-3">
+                      <option value="male" selected>Erkek</option>
+                      <option value="female">Kadın</option>
+                  </select>
+                  </div>
+              <div class="grid grid-cols-10">
+                  <label for="activity__level" class="grid col-span-3 lg:col-span-2 items-center">Fiziksel Aktivite Seviyesi:</label>
+                  <select id="activity__level" required class="col-span-7 p-3">
+                      <option value="1.2" selected>Egzersiz yok denecek kadar az</option>
+                      <option value="1.375">Hafif Egzersiz (yürüme, koşma)</option>
+                      <option value="1.55">Orta Derecede Egzersiz (spor)</option>
+                      <option value="1.725">Ağır Egzersiz (günlük rutin)</option>
+                      <option value="1.9">Ekstra Ağır Egzersiz (günde iki kez tutarlı rutin)</option>
+                  </select>
+              </div>
+              <div class="grid grid-cols-10">
+                  <button type="submit" id="result__button" class="bg-white text-dark max-h-7 w-36 border-2 pb-5 pt-5 font-semibold border-dashed font-noto flex justify-center items-center hover:bg-dark hover:text-white mt-4">Hesapla!</button>
+              </div>
+              <div class="js-result hidden">
+                  <ul>
+                      <li>
+                          <div id="outBasal" class="mb-2 text-sm"></div>
+                      </li>
+                      <li>
+                          <div id="outMaintenance" class="mb-2 text-sm"></div>
+                      </li>
+                      <li>
+                          <div id="outGainWeight" class="mb-2 text-sm"></div>
+                      </li>
+                      <li>
+                          <div id="outLoseWeight" class="text-sm"></div>
+                      </li>
+                  </ul>
+              </div>
+          </form>
+           <p>Günlük kalori hesaplama yap, kalori hesabı sonucunda yiyeceklerin kalorilerine dikkat et, kilonu ve sağlığını koru.</p><h2>Kalori Hesabı</h2><p>Kalori bir enerji birimidir. Tarihsel olarak, bilim adamları  "kaloriyi   kömür veya gaz gibi çeşitli kaynaklardan gelebilecek bir enerji veya ısı birimi olarak tanımladılar. Besinsel anlamda, ister yağ, ister protein, karbonhidrat veya şeker olsun, her tür gıda, insanların yaşaması ve işlev görmesi gereken önemli kalori kaynaklarıdır. Farklı aktiviteler yaparak ne kadar kalori yaktığınızı izlemenizi sağlar.</p><p>Clayton, Missouri 'de kayıtlı bir beslenme uzmanı diyetisyen ve Beslenme ve Diyetetik Akademisi sözcüsü Jennifer McDaniel,  "Beynimiz, kaslarımız  - vücudumuzdaki her hücre  - optimal durumda çalışması için enerjiye ihtiyaç duyar   dedi.  "Birincisi, vücudumuzu ve beynimizi doğru beslemek istiyoruz. Bu besinlerden [kalorilerin sağladığı] yeterince almazsak, yağsız kas kütlesini kaybetmek, konsantre olamamak, günlük olarak ihtiyacımız olan enerjiye sahip olamamak gibi olumsuz sonuçlar vardır.</p><h2>Kalori Fiziği</h2><p>1863 'te Journal of Nutrition 'da yayınlanan  "History of the Calorie in Nutrition   başlıklı bir makaleye göre, kalori, 1 kilogram suyun sıcaklığını 0 'dan 1 santigrat dereceye çıkarmak için gereken ısı miktarı olarak tanımlandı. 1925 'te kaloriler, fizikçiler tarafından bir Newton 'u bir metreye zorlamak için gereken iş miktarını tanımlamak için tipik olarak kullanılan birimler olan joule cinsinden bilimsel olarak tanımlandı. Bu nedenle, özellikle Avrupa ve Avustralya 'da bazen kalorilerin kilojul olarak adlandırıldığını görürsünüz. Bir kalori 4,18 joule eşittir; 1 joule, bir kalorinin 0.000239006 'sına eşittir.</p><p>Bir kaloriyi yapmak için gereken ısı miktarı farklı sıcaklıklarda farklılık gösterir, bu nedenle bilim adamları su sıcaklıklarına göre farklı kalori türleri oluşturmaya karar verdiler. Farklı sıcaklıklar, gram kalori veya 15 derece kalori olarak da adlandırılan küçük kalori gibi farklı kalori türleri verir. Bu kalori, 1 gram suyun sıcaklığını 14,5 'ten 15,5 santigrat  dereceye çıkarmak için gereken ısı miktarını ifade eder.</p><p>Beslenmede bir kalori aslında bu küçük kalorilerin 1.000 'i kadardır. Bazı araştırmacılar kilokalori terimini 1000 küçük kalorilik besin birimine atıfta bulunmak için kullanırlar. 1.000 küçük kalorilik bu birimlere bazen büyük kaloriler, diyet kalorileri, besin kalorileri, yiyecek kalorileri ve büyük C harfiyle Kaloriler de denir.</p><p>Bu nedenle, Amerikalıların gıda etiketlerinde gördükleri aslında kilokalori veya kilojul 'dür. ABD Tarım Bakanlığı orta boy bir elmanın 95 kalori içerdiğini söylediğinde, aslında 95 kilokalori içeriyor. (Bu makale kilokalori yerine kalori terimini kullanır.)</p><p>Farklı makrobesin türleri standart miktarda kaloriye sahiptir. Bir gram protein 4 kaloridir. Bir gram karbonhidratta 4 kalori vardır. McKinley Sağlık Merkezi 'ne göre bir gram yağın 9 kalorisi vardır.</p><h2>İnsanlar Her Gün Kaç Kalori Yemeli?</h2><p>McDaniel, bir kişinin günde kaç kaloriye ihtiyaç duyduğunun, bireyin aktivite düzeyine ve bir doktor veya diyetisyenin ofisinde ölçülebilen dinlenme metabolik hızına bağlı olduğunu söyledi. “Önemli besinler ve mikro besinlerin dengesini sağladıklarından emin olmak için erkeklerin 1.500 kaloriden ve kadınların 1.200 kaloriden daha az yememesi gerektiğine dair geleneksel bir bilgelik var.”</p><p>Ulusal Sağlık Enstitüleri (NIH), çeşitli yaşlar ve aktivite seviyeleri için genel kalori gereksinimleri yönergeleri sağlar. Orta yaşlı orta derecede aktif bir kadın günde 2.000 kalori tüketmelidir. Orta yaşta orta derecede aktif bir erkek günde 2.400 ila 2.600 kalori tüketmelidir.</p><p>Ulusal Bilimler, Mühendislik ve Tıp Akademileri tarafından yayınlanan resmi Diyet Referans Alımları (DRI), bir yetişkin için kalorinin yüzde 45 ila 65 'inin karbonhidratlardan, yüzde 20 ila 25 'inin yağdan ve yüzde 10 ila 35 'inin alınması gerektiğini önermektedir. proteinden gelir. Çocukların kalorilerinin yüzde 25 ila 40 'ı arasında daha yüksek oranda yağa ihtiyaçları vardır. Toplam kalorinin yüzde 25 'inden fazlası ilave şekerlerden gelmemelidir.</p><p>McDaniel, bu genel yönergelerin ötesinde, ihtiyaç duyulan makro besin miktarının bireyin aktivite düzeyine bağlı olduğunu söyledi. Örneğin bir sporcunun daha fazla karbonhidrata ihtiyacı vardır. Yemek tercihleri ​​de rol oynar. “Ekmeği seviyorum, bu yüzden asla düşük karbonhidratlı bir diyete gitmem çünkü sürdürülebilir bir yaklaşım istiyorum” dedi.</p><h2>Yüksek Kalorili Yiyecekler Nelerdir?</h2><p>Mayo Clinic 'e göre, yüksek kalorili veya kalorik olarak yoğun olarak kabul edilen yiyecekler, porsiyon boyutlarına göre yüksek miktarda kaloriye sahiptir. Yağlar, tereyağı ve diğer yağlar; kızarmış yiyecekler; ve şekerli tatlılar yüksek kalorili yiyeceklerdir. Yüksek kalorili yiyecekler genellikle abur cuburla ilişkilendirilirken, bazılarının besin değeri de yüksektir.</p><p>Kalorisi yüksek sağlıklı besinler arasında avokado  (her biri 227 kalori), kinoa (fincan başına 222 kalori), fındık (fıstık başına 828 kalori), zeytinyağı (yemek kaşığı başına 119 kalori), kepekli tahıllar ve ölçülü olarak, USDA Beslenme Veritabanına göre bitter çikolata (bar başına 648 kalori).</p><p>Kuru üzüm, bazı insanları şaşırtabilecek yüksek kalorili yiyeceklere örnektir; Mayo Clinic 'e göre 1 fincan üzüm yiyebilir ve çeyrek fincan kuru üzümle aynı miktarda kalori alabilirsiniz. Kuru meyveler genellikle kalori bakımından yoğundur; Bu nedenle çok kalori yakan yürüyüşçüler arasında popülerdirler.</p><h2>Düşük Kalorili Yiyecekler Nelerdir?</h2><p>Düşük kalorili olarak kabul edilen yiyecekler, porsiyon boyutlarına göre düşük miktarda kaloriye sahiptir. Meyveler ve özellikle sebzeler genellikle nispeten düşük kalorilidir. Örneğin, 2 bardak kıyılmış marul veya ıspanak 16 kalori, büyük bir kereviz sapı 10 kalori, 1 büyük mısır başağı 123 kalori, 1 bardak brokoli 15 kalori ve bir portakal 70 kalori içeriyor.</p><h2>Boş Kalori Nedir?</h2><p>Boş kaloriler çok az besin içerir veya hiç içermez. USDA tarafından yürütülen Benim Tabağımı Seç kampanyasına göre, genellikle ilave şekerlerden ve katı yağlardan gelirler. Katı yağlar, tereyağı, katı yağ ve bazı etlerde bulunan yağlar gibi oda sıcaklığında katılaşan yağlardır. Doğal olarak oluşabilirler, ancak genellikle gıdalara eklenirler.</p><p>Birçok tipik Amerikan yemeği çok fazla boş kaloriye sahiptir. Tabağımı Seç, boş kalorisi yüksek popüler yiyeceklere örnek olarak dondurma, gazlı içecekler, peynir, pizza ve sosisli sandviç ve sosis gibi işlenmiş etleri listeler. Peynir ve pizza gibi bu yiyeceklerden bazıları da besin maddeleri içerir (peynir yüksek oranda kalsiyum içerir ve protein içerir; pizza sosları, sosları ve kabukları besin içerebilir), ancak gazlı içecekler ve çoğu şekerleme gibi diğer yiyecekler yalnızca boş kalori içerir.</p><h2>Kalori ve Kilo Kaybı</h2><p>Yeterli kalori tüketmek önemli olsa da, kalori saymak ve kesmek birçok insanın kilo vermesine yardımcı olabilir. Kaloriler fiziksel aktivite ile harcanır. Örneğin, Runner 's World dergisine göre bir mil koşmak yaklaşık 112 kalori yakabilir. Hastalık Kontrol ve Önleme Merkezleri (CDC), kalori dengesi olarak yakılan kalori ve tüketilen kalori dengesini ifade eder. Bir terazi gibi çalışır; Dengede olduğunuzda, tüketilen kaloriler yakılan kalorilerle dengelenir. Bu, vücut ağırlığınızı koruyacağınız anlamına gelir.</p><p>CDC 'ye göre, kilonuzu koruyorsanız, kalori dengesindesiniz. Bu, her gün yaktığınız kalorinin aşağı yukarı aynı miktarını tükettiğiniz anlamına gelir. Kalori fazlalığınız varsa, yaktığınızdan daha fazla kalori yiyorsunuz ve kilo alacaksınız. Kalori açığınız varsa, yediğinizden daha fazla kalori yakıyorsunuz ve kilo vereceksiniz.</p><p>Reklamcılık<br> İnsanlar <a href="https://kalorihesabi.com/blog/10-ayda-30-kilo-nasil-verilir/">kilo vermek</a> istediklerinde genellikle kalori açığı vermeye çalışırlar. Ancak kalori açığı olan bir kişinin bile işlev görmesi ve sağlıklı kalması için yeterli kalori tüketmesi gerekir. McDaniel, yeterli kalori tüketmenin kilo verme sürecinde kas kütlesinin korunmasına yardımcı olduğunu söyledi. Ayrıca kilo kaybını sürdürülebilir hale getirmeye yardımcı olur.  "Birisi kilo vermek için kalorileri keserse, oradan nereye giderler? Bu, gitgide daha az yemeye devam ettikleri anlamına mı geliyor?” diye sordu.</p><p>Kilo verme sürecinde yeterli kalori tüketmek, sağlıklı bir metabolizma hızının korunması için de önemlidir. McDaniel,  "Kronik yetersiz yeme  - zamanla günde 800 veya 1.000 kalori yemek  - dinlenme metabolizma hızınızı düşürür, bu da ne kadar kalori yaktığınızı ve metabolik makinenizi etkiler   dedi.</p>
           </div>
         </div>
         <div class="hidden lg:flex align-top justify-start h-full w-3/12 col-span-3 absolute right-0">

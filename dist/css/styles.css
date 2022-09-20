@@ -376,6 +376,7 @@ video {
   *:hover{
     transition: all 0.2s ease;
   }
+  
 
   h1 {
   font-family: EB Garamond, serif;
@@ -759,7 +760,6 @@ ul.page-numbers {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .lwptoc {
-  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 .lwptoc_header a {
@@ -904,6 +904,9 @@ ul.page-numbers {
 .right-2 {
   right: 0.5rem;
 }
+.col-auto {
+  grid-column: auto;
+}
 .col-span-7 {
   grid-column: span 7 / span 7;
 }
@@ -925,8 +928,11 @@ ul.page-numbers {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-auto {
-  grid-column: auto;
+.col-span-full {
+  grid-column: 1 / -1;
+}
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 .mr-auto {
   margin-right: auto;
@@ -970,11 +976,11 @@ ul.page-numbers {
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
-}
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mt-0 {
   margin-top: 0px;
@@ -1075,6 +1081,12 @@ ul.page-numbers {
 .w-3\/4 {
   width: 75%;
 }
+.flex-grow {
+  flex-grow: 1;
+}
+.grow {
+  flex-grow: 1;
+}
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1098,6 +1110,9 @@ ul.page-numbers {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-none {
+  grid-template-columns: none;
+}
 .grid-cols-10 {
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
@@ -1115,9 +1130,6 @@ ul.page-numbers {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-none {
-  grid-template-columns: none;
 }
 .flex-row {
   flex-direction: row;
@@ -1157,6 +1169,9 @@ ul.page-numbers {
 }
 .gap-0 {
   gap: 0px;
+}
+.gap-3 {
+  gap: 0.75rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -1264,11 +1279,14 @@ ul.page-numbers {
 .p-7 {
   padding: 1.75rem;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .p-5 {
   padding: 1.25rem;
 }
-.p-3 {
-  padding: 0.75rem;
+.p-2 {
+  padding: 0.5rem;
 }
 .pl-5 {
   padding-left: 1.25rem;
@@ -1398,6 +1416,9 @@ ul.page-numbers {
 }
 .leading-3 {
   line-height: .75rem;
+}
+.leading-8 {
+  line-height: 2rem;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -1648,6 +1669,10 @@ ul.page-numbers {
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:flex {

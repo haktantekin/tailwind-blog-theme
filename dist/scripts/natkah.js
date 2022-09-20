@@ -4,7 +4,7 @@
 
 // caltoKilo();
 
-function mobileButton(){
+function mobileButton() {
   let nav = document.querySelector('.js-top-nav');
   if (nav.style.display === "none") {
     nav.style.display = "block";
@@ -79,6 +79,7 @@ function hWRatio() {
 const form = document.getElementById('form');
 if (form !== null) {
   form.addEventListener('submit', handleSubmit);
+
 }
 
 function handleSubmit(event) {
@@ -89,6 +90,9 @@ function handleSubmit(event) {
   const age = getInputNumberValue("age");
   const gender = getSelectedValue("gender");
   const activityLevel = getSelectedValue("activity__level");
+
+  let result = document.querySelector('.js-result');
+  result.className = 'bg-gray p-5 mt-4'
 
   const basal = Math.round(
     gender === 'female' ?
@@ -156,11 +160,11 @@ if (document.querySelector('.content-cal-table')) {
 
 // Kalori Hesabı Keypress
 
-  let selectUnit = document.querySelectorAll('.content-cal-form-item select')[0]
-  let selectText;
-  let unitTitle = document.querySelectorAll('.content-cal-list')[0].querySelector('li:nth-child(3)')
-  
-  unitTitle.innerText = document.querySelectorAll('.content-cal-form-item input')[0].value + ' ' + document.querySelectorAll('.content-cal-form-item select')[0].selectedOptions[0].text
+let selectUnit = document.querySelectorAll('.content-cal-form-item select')[0]
+let selectText;
+let unitTitle = document.querySelectorAll('.content-cal-list')[0].querySelector('li:nth-child(3)')
+
+unitTitle.innerText = document.querySelectorAll('.content-cal-form-item input')[0].value + ' ' + document.querySelectorAll('.content-cal-form-item select')[0].selectedOptions[0].text
 
 function keyPressInput() {
   document.querySelectorAll('.content-cal-form-item input')[0].addEventListener('keyup', function (e) {
@@ -255,7 +259,7 @@ function calculateKey() {
   keyPressInput();
   selectChange()
 }
- calculateKey();
+calculateKey();
 
 function more() {
   if (document.querySelector('.category-description').style.height !== "100%") {
@@ -274,4 +278,3 @@ function caltoKilo(valNum) {
   }
   document.getElementById("outputKilograms").innerHTML = valNum * 0.00013;
 }
-
