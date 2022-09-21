@@ -53,10 +53,10 @@
   </section>
   <header class="h-28 md:h-28 text-left md:text-center flex justify-between md:justify-center items-center">
     <div>
-      <a href="/"><img class="w-36 md:w-52" src="public/img/logo.png" /></a>
+      <a href="/dist/index.html"><img class="w-36 md:w-52" src="public/img/logo.png" /></a>
     </div>
     <div class="flex md:hidden">
-      <div class="nav-icon js-nav-icon" onclick="mobileButton()"> <i class="fas fa-ellipsis-v"></i></div>
+      <div class="nav-icon js-nav-icon" onclick="mobileButton()"> <i class="fa-sharp fa-solid fa-burger text-3xl"></i></div>
     </div>
   </header>
   <nav
@@ -64,37 +64,28 @@
     <div class="container">
       <ul class="flex justify-center items-center gap-5 flex-col md:flex-row">
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Kaç Kalori</a>
+          <a class="hover:font-bold" href="/dist/kac-kalori.html">Kaç Kalori</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Kilo Aldırır Mı?</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Kilo Aldırır Mı?</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Vegan Mı?</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Vegan Mı?</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Hesaplamalar</a>
+          <a class="hover:font-bold" href="/dist/hesaplamalar.html">Hesaplamalar</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Blog</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Blog</a>
         </li>
       </ul>
     </div>
   </nav>
   <section class="flex-col pt-0 md:pt-7 overflow-hidden">
     <div class="container">
-      <h1 class="border-gray border-dashed border-b-2 pb-4">
-        Kalori Kilo Hesaplama
+      <h1 class="border-gray border-dashed border-b-2 pb-4 mb-7">
+        İdeal Kilo Hesaplama
       </h1>
-      <div class="mt-5 mb-10 flex gap-4 text-darkgray text-xs">
-        <div>
-          <i class="fa fa-tag mr-1"></i>
-          <a href="javascript:;" rel="category tag">Kaç Kalori</a>
-        </div>
-        <div class="content-list-item-info-tag"> <i class="fa fa-hashtag"></i>
-          <a href="javascript:;" rel="tag">Kalorisi Ne?</a>
-        </div>
-      </div>
       <section class="grid grid-cols-none lg:grid-cols-10 w-full gap-0 relative">
         <div class="flex flex-col col-auto lg:col-span-7">
           <div class="content-img mb-7">
@@ -114,14 +105,14 @@
             </div>
             <div class="flex flex-col w-full mt-7 gap-5 mb-7">
               <div class="grid grid-cols-10 w-full">
-                <input class="w-full rounded col-span-8 bg-gray h-1 focus:bg-gray border-none appearance-none mt-3" type="range" min="20"
-                  max="200" value="20" id="weight" oninput="hWRatio()">
+                <input class="w-full rounded col-span-8 bg-gray h-1 focus:bg-gray border-none appearance-none mt-3"
+                  type="range" min="20" max="200" value="20" id="weight" oninput="hWRatio()">
                 <span id="weight-val" class="col-span-2 text-center">20 kg</span>
               </div>
               <div class="grid grid-cols-10 w-full">
-                <input class="rounded col-span-8 bg-gray h-1 focus:bg-gray border-none appearance-none mt-3" type="range"
-                  min="100" max="250" value="100" id="height" oninput="hWRatio()">
-                <span id="height-val"class="col-span-2 text-center">100 cm</span>
+                <input class="rounded col-span-8 bg-gray h-1 focus:bg-gray border-none appearance-none mt-3"
+                  type="range" min="100" max="250" value="100" id="height" oninput="hWRatio()">
+                <span id="height-val" class="col-span-2 text-center">100 cm</span>
               </div>
             </div>
             <h2>İdeal Kilo Hesaplama Aracı</h2>
@@ -181,7 +172,7 @@
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-4">
         <div class="">
-          <a href="/"><img class="w-36" src="public/img/logo.png" /></a>
+          <a href="/dist/index.html"><img class="w-36" src="public/img/logo.png" /></a>
           <p class="text-xs mt-3 w-64">
             Kalori Hesabı sitemizin amacı kalori hesaplama, ideal kilo hesaplama ve yediğimiz yiyeceklerin kaç kalori
             olduğunu sizlere doğru bir biçimde aktarmaktır.

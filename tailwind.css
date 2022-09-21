@@ -134,7 +134,11 @@
     @apply border-b border-dark pt-3 pb-3 font-semibold bg-transparent
   }
 
-  .content-in p a{
+  .content-in p a, .content-in a{
     @apply font-noto font-bold pb-1 border-b border-dashed border-dark hover:bg-dark hover:text-white hover:pl-2 hover:pr-2 hover:pt-1 hover:border-0
+  }
+  
+  .category-description strong{
+    @apply mt-4 mb-4 block
   }
 }

@@ -53,10 +53,10 @@
   </section>
   <header class="h-28 md:h-28 text-left md:text-center flex justify-between md:justify-center items-center">
     <div>
-      <a href="/"><img class="w-36 md:w-52" src="public/img/logo.png" /></a>
+      <a href="/dist/index.html"><img class="w-36 md:w-52" src="public/img/logo.png" /></a>
     </div>
     <div class="flex md:hidden">
-      <div class="nav-icon js-nav-icon" onclick="mobileButton()"> <i class="fas fa-ellipsis-v"></i></div>
+      <div class="nav-icon js-nav-icon" onclick="mobileButton()"> <i class="fa-sharp fa-solid fa-burger text-3xl"></i></div>
     </div>
   </header>
   <nav
@@ -64,37 +64,28 @@
     <div class="container">
       <ul class="flex justify-center items-center gap-5 flex-col md:flex-row">
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Kaç Kalori</a>
+          <a class="hover:font-bold" href="/dist/kac-kalori.html">Kaç Kalori</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Kilo Aldırır Mı?</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Kilo Aldırır Mı?</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Vegan Mı?</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Vegan Mı?</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Hesaplamalar</a>
+          <a class="hover:font-bold" href="/dist/hesaplamalar.html">Hesaplamalar</a>
         </li>
         <li>
-          <a class="hover:font-bold" href="javsacript:;">Blog</a>
+          <a class="hover:font-bold" href="/dist/blog.html">Blog</a>
         </li>
       </ul>
     </div>
   </nav>
   <section class="flex-col pt-0 md:pt-7 overflow-hidden">
     <div class="container">
-      <h1 class="border-gray border-dashed border-b-2 pb-4">
+      <h1 class="border-gray border-dashed border-b-2 pb-4 mb-7">
         Kalori Hesaplama
       </h1>
-      <div class="mt-5 mb-10 flex gap-4 text-darkgray text-xs">
-        <div>
-          <i class="fa fa-tag mr-1"></i>
-          <a href="javascript:;" rel="category tag">Kaç Kalori</a>
-        </div>
-        <div class="content-list-item-info-tag"> <i class="fa fa-hashtag"></i>
-          <a href="javascript:;" rel="tag">Kalorisi Ne?</a>
-        </div>
-      </div>
       <section class="grid grid-cols-none lg:grid-cols-10 w-full gap-0 relative">
         <div class="flex flex-col col-auto lg:col-span-7">
           <div class="content-img mb-7">
@@ -110,58 +101,159 @@
           <div class="content-in tracking-wide text-base font-relaway">
             <form id="form" class="flex justify-center flex-col gap-3" onsubmit="return false">
               <div class="grid grid-cols-10">
-                  <label for="weight" class="grid col-span-3 lg:col-span-2 items-center">Kilonuz:</label>
-                  <input type="number" id="weight" placeholder="Örn: 72,5" step="0.01" required min="20" max="300" class="col-span-7 p-3">
-                  <div class="hidden lg:flex justify-center items-center">kg</div>
+                <label for="weight" class="grid col-span-3 lg:col-span-2 items-center">Kilonuz:</label>
+                <input type="number" id="weight" placeholder="Örn: 72,5" step="0.01" required min="20" max="300"
+                  class="col-span-7 p-3">
+                <div class="hidden lg:flex justify-center items-center">kg</div>
               </div>
               <div class="grid grid-cols-10">
-                  <label for="height" class="grid col-span-3 lg:col-span-2 items-center">Boyunuz:</label>
-                  <input type="number" id="height" placeholder="Örn: 160" step="0.01" required min="1" max="240" class="col-span-7 p-3"> 
-                  <div class="hidden lg:flex justify-center items-center">cm</div>
+                <label for="height" class="grid col-span-3 lg:col-span-2 items-center">Boyunuz:</label>
+                <input type="number" id="height" placeholder="Örn: 160" step="0.01" required min="1" max="240"
+                  class="col-span-7 p-3">
+                <div class="hidden lg:flex justify-center items-center">cm</div>
               </div>
               <div class="grid grid-cols-10">
-                  <label for="age" class="grid col-span-3 lg:col-span-2 items-center">Yaşınız:</label>
-                  <input type="number" id="age" placeholder="Örn: 25" step="1" required min="1" max="120" class="col-span-7 p-3">
-                  <div class="hidden lg:flex justify-center items-center">yaşım</div>
+                <label for="age" class="grid col-span-3 lg:col-span-2 items-center">Yaşınız:</label>
+                <input type="number" id="age" placeholder="Örn: 25" step="1" required min="1" max="120"
+                  class="col-span-7 p-3">
+                <div class="hidden lg:flex justify-center items-center">yaşım</div>
               </div>
               <div class="grid grid-cols-10">
-                  <label for="gender" class="grid col-span-3 lg:col-span-2 items-center">Cinsiyetiniz:</label>
-                  <select id="gender" required class="col-span-7 p-3">
-                      <option value="male" selected>Erkek</option>
-                      <option value="female">Kadın</option>
-                  </select>
-                  </div>
-              <div class="grid grid-cols-10">
-                  <label for="activity__level" class="grid col-span-3 lg:col-span-2 items-center">Fiziksel Aktivite Seviyesi:</label>
-                  <select id="activity__level" required class="col-span-7 p-3">
-                      <option value="1.2" selected>Egzersiz yok denecek kadar az</option>
-                      <option value="1.375">Hafif Egzersiz (yürüme, koşma)</option>
-                      <option value="1.55">Orta Derecede Egzersiz (spor)</option>
-                      <option value="1.725">Ağır Egzersiz (günlük rutin)</option>
-                      <option value="1.9">Ekstra Ağır Egzersiz (günde iki kez tutarlı rutin)</option>
-                  </select>
+                <label for="gender" class="grid col-span-3 lg:col-span-2 items-center">Cinsiyetiniz:</label>
+                <select id="gender" required class="col-span-7 p-3">
+                  <option value="male" selected>Erkek</option>
+                  <option value="female">Kadın</option>
+                </select>
               </div>
               <div class="grid grid-cols-10">
-                  <button type="submit" id="result__button" class="bg-white text-dark max-h-7 w-36 border-2 pb-5 pt-5 font-semibold border-dashed font-noto flex justify-center items-center hover:bg-dark hover:text-white mt-4">Hesapla!</button>
+                <label for="activity__level" class="grid col-span-3 lg:col-span-2 items-center">Fiziksel Aktivite
+                  Seviyesi:</label>
+                <select id="activity__level" required class="col-span-7 p-3">
+                  <option value="1.2" selected>Egzersiz yok denecek kadar az</option>
+                  <option value="1.375">Hafif Egzersiz (yürüme, koşma)</option>
+                  <option value="1.55">Orta Derecede Egzersiz (spor)</option>
+                  <option value="1.725">Ağır Egzersiz (günlük rutin)</option>
+                  <option value="1.9">Ekstra Ağır Egzersiz (günde iki kez tutarlı rutin)</option>
+                </select>
+              </div>
+              <div class="grid grid-cols-10">
+                <button type="submit" id="result__button"
+                  class="bg-white text-dark max-h-7 w-36 border-2 pb-5 pt-5 font-semibold border-dashed font-noto flex justify-center items-center hover:bg-dark hover:text-white mt-4">Hesapla!</button>
               </div>
               <div class="js-result hidden">
-                  <ul>
-                      <li>
-                          <div id="outBasal" class="mb-2 text-sm"></div>
-                      </li>
-                      <li>
-                          <div id="outMaintenance" class="mb-2 text-sm"></div>
-                      </li>
-                      <li>
-                          <div id="outGainWeight" class="mb-2 text-sm"></div>
-                      </li>
-                      <li>
-                          <div id="outLoseWeight" class="text-sm"></div>
-                      </li>
-                  </ul>
+                <ul>
+                  <li>
+                    <div id="outBasal" class="mb-2 text-sm"></div>
+                  </li>
+                  <li>
+                    <div id="outMaintenance" class="mb-2 text-sm"></div>
+                  </li>
+                  <li>
+                    <div id="outGainWeight" class="mb-2 text-sm"></div>
+                  </li>
+                  <li>
+                    <div id="outLoseWeight" class="text-sm"></div>
+                  </li>
+                </ul>
               </div>
-          </form>
-           <p>Günlük kalori hesaplama yap, kalori hesabı sonucunda yiyeceklerin kalorilerine dikkat et, kilonu ve sağlığını koru.</p><h2>Kalori Hesabı</h2><p>Kalori bir enerji birimidir. Tarihsel olarak, bilim adamları  "kaloriyi   kömür veya gaz gibi çeşitli kaynaklardan gelebilecek bir enerji veya ısı birimi olarak tanımladılar. Besinsel anlamda, ister yağ, ister protein, karbonhidrat veya şeker olsun, her tür gıda, insanların yaşaması ve işlev görmesi gereken önemli kalori kaynaklarıdır. Farklı aktiviteler yaparak ne kadar kalori yaktığınızı izlemenizi sağlar.</p><p>Clayton, Missouri 'de kayıtlı bir beslenme uzmanı diyetisyen ve Beslenme ve Diyetetik Akademisi sözcüsü Jennifer McDaniel,  "Beynimiz, kaslarımız  - vücudumuzdaki her hücre  - optimal durumda çalışması için enerjiye ihtiyaç duyar   dedi.  "Birincisi, vücudumuzu ve beynimizi doğru beslemek istiyoruz. Bu besinlerden [kalorilerin sağladığı] yeterince almazsak, yağsız kas kütlesini kaybetmek, konsantre olamamak, günlük olarak ihtiyacımız olan enerjiye sahip olamamak gibi olumsuz sonuçlar vardır.</p><h2>Kalori Fiziği</h2><p>1863 'te Journal of Nutrition 'da yayınlanan  "History of the Calorie in Nutrition   başlıklı bir makaleye göre, kalori, 1 kilogram suyun sıcaklığını 0 'dan 1 santigrat dereceye çıkarmak için gereken ısı miktarı olarak tanımlandı. 1925 'te kaloriler, fizikçiler tarafından bir Newton 'u bir metreye zorlamak için gereken iş miktarını tanımlamak için tipik olarak kullanılan birimler olan joule cinsinden bilimsel olarak tanımlandı. Bu nedenle, özellikle Avrupa ve Avustralya 'da bazen kalorilerin kilojul olarak adlandırıldığını görürsünüz. Bir kalori 4,18 joule eşittir; 1 joule, bir kalorinin 0.000239006 'sına eşittir.</p><p>Bir kaloriyi yapmak için gereken ısı miktarı farklı sıcaklıklarda farklılık gösterir, bu nedenle bilim adamları su sıcaklıklarına göre farklı kalori türleri oluşturmaya karar verdiler. Farklı sıcaklıklar, gram kalori veya 15 derece kalori olarak da adlandırılan küçük kalori gibi farklı kalori türleri verir. Bu kalori, 1 gram suyun sıcaklığını 14,5 'ten 15,5 santigrat  dereceye çıkarmak için gereken ısı miktarını ifade eder.</p><p>Beslenmede bir kalori aslında bu küçük kalorilerin 1.000 'i kadardır. Bazı araştırmacılar kilokalori terimini 1000 küçük kalorilik besin birimine atıfta bulunmak için kullanırlar. 1.000 küçük kalorilik bu birimlere bazen büyük kaloriler, diyet kalorileri, besin kalorileri, yiyecek kalorileri ve büyük C harfiyle Kaloriler de denir.</p><p>Bu nedenle, Amerikalıların gıda etiketlerinde gördükleri aslında kilokalori veya kilojul 'dür. ABD Tarım Bakanlığı orta boy bir elmanın 95 kalori içerdiğini söylediğinde, aslında 95 kilokalori içeriyor. (Bu makale kilokalori yerine kalori terimini kullanır.)</p><p>Farklı makrobesin türleri standart miktarda kaloriye sahiptir. Bir gram protein 4 kaloridir. Bir gram karbonhidratta 4 kalori vardır. McKinley Sağlık Merkezi 'ne göre bir gram yağın 9 kalorisi vardır.</p><h2>İnsanlar Her Gün Kaç Kalori Yemeli?</h2><p>McDaniel, bir kişinin günde kaç kaloriye ihtiyaç duyduğunun, bireyin aktivite düzeyine ve bir doktor veya diyetisyenin ofisinde ölçülebilen dinlenme metabolik hızına bağlı olduğunu söyledi. “Önemli besinler ve mikro besinlerin dengesini sağladıklarından emin olmak için erkeklerin 1.500 kaloriden ve kadınların 1.200 kaloriden daha az yememesi gerektiğine dair geleneksel bir bilgelik var.”</p><p>Ulusal Sağlık Enstitüleri (NIH), çeşitli yaşlar ve aktivite seviyeleri için genel kalori gereksinimleri yönergeleri sağlar. Orta yaşlı orta derecede aktif bir kadın günde 2.000 kalori tüketmelidir. Orta yaşta orta derecede aktif bir erkek günde 2.400 ila 2.600 kalori tüketmelidir.</p><p>Ulusal Bilimler, Mühendislik ve Tıp Akademileri tarafından yayınlanan resmi Diyet Referans Alımları (DRI), bir yetişkin için kalorinin yüzde 45 ila 65 'inin karbonhidratlardan, yüzde 20 ila 25 'inin yağdan ve yüzde 10 ila 35 'inin alınması gerektiğini önermektedir. proteinden gelir. Çocukların kalorilerinin yüzde 25 ila 40 'ı arasında daha yüksek oranda yağa ihtiyaçları vardır. Toplam kalorinin yüzde 25 'inden fazlası ilave şekerlerden gelmemelidir.</p><p>McDaniel, bu genel yönergelerin ötesinde, ihtiyaç duyulan makro besin miktarının bireyin aktivite düzeyine bağlı olduğunu söyledi. Örneğin bir sporcunun daha fazla karbonhidrata ihtiyacı vardır. Yemek tercihleri ​​de rol oynar. “Ekmeği seviyorum, bu yüzden asla düşük karbonhidratlı bir diyete gitmem çünkü sürdürülebilir bir yaklaşım istiyorum” dedi.</p><h2>Yüksek Kalorili Yiyecekler Nelerdir?</h2><p>Mayo Clinic 'e göre, yüksek kalorili veya kalorik olarak yoğun olarak kabul edilen yiyecekler, porsiyon boyutlarına göre yüksek miktarda kaloriye sahiptir. Yağlar, tereyağı ve diğer yağlar; kızarmış yiyecekler; ve şekerli tatlılar yüksek kalorili yiyeceklerdir. Yüksek kalorili yiyecekler genellikle abur cuburla ilişkilendirilirken, bazılarının besin değeri de yüksektir.</p><p>Kalorisi yüksek sağlıklı besinler arasında avokado  (her biri 227 kalori), kinoa (fincan başına 222 kalori), fındık (fıstık başına 828 kalori), zeytinyağı (yemek kaşığı başına 119 kalori), kepekli tahıllar ve ölçülü olarak, USDA Beslenme Veritabanına göre bitter çikolata (bar başına 648 kalori).</p><p>Kuru üzüm, bazı insanları şaşırtabilecek yüksek kalorili yiyeceklere örnektir; Mayo Clinic 'e göre 1 fincan üzüm yiyebilir ve çeyrek fincan kuru üzümle aynı miktarda kalori alabilirsiniz. Kuru meyveler genellikle kalori bakımından yoğundur; Bu nedenle çok kalori yakan yürüyüşçüler arasında popülerdirler.</p><h2>Düşük Kalorili Yiyecekler Nelerdir?</h2><p>Düşük kalorili olarak kabul edilen yiyecekler, porsiyon boyutlarına göre düşük miktarda kaloriye sahiptir. Meyveler ve özellikle sebzeler genellikle nispeten düşük kalorilidir. Örneğin, 2 bardak kıyılmış marul veya ıspanak 16 kalori, büyük bir kereviz sapı 10 kalori, 1 büyük mısır başağı 123 kalori, 1 bardak brokoli 15 kalori ve bir portakal 70 kalori içeriyor.</p><h2>Boş Kalori Nedir?</h2><p>Boş kaloriler çok az besin içerir veya hiç içermez. USDA tarafından yürütülen Benim Tabağımı Seç kampanyasına göre, genellikle ilave şekerlerden ve katı yağlardan gelirler. Katı yağlar, tereyağı, katı yağ ve bazı etlerde bulunan yağlar gibi oda sıcaklığında katılaşan yağlardır. Doğal olarak oluşabilirler, ancak genellikle gıdalara eklenirler.</p><p>Birçok tipik Amerikan yemeği çok fazla boş kaloriye sahiptir. Tabağımı Seç, boş kalorisi yüksek popüler yiyeceklere örnek olarak dondurma, gazlı içecekler, peynir, pizza ve sosisli sandviç ve sosis gibi işlenmiş etleri listeler. Peynir ve pizza gibi bu yiyeceklerden bazıları da besin maddeleri içerir (peynir yüksek oranda kalsiyum içerir ve protein içerir; pizza sosları, sosları ve kabukları besin içerebilir), ancak gazlı içecekler ve çoğu şekerleme gibi diğer yiyecekler yalnızca boş kalori içerir.</p><h2>Kalori ve Kilo Kaybı</h2><p>Yeterli kalori tüketmek önemli olsa da, kalori saymak ve kesmek birçok insanın kilo vermesine yardımcı olabilir. Kaloriler fiziksel aktivite ile harcanır. Örneğin, Runner 's World dergisine göre bir mil koşmak yaklaşık 112 kalori yakabilir. Hastalık Kontrol ve Önleme Merkezleri (CDC), kalori dengesi olarak yakılan kalori ve tüketilen kalori dengesini ifade eder. Bir terazi gibi çalışır; Dengede olduğunuzda, tüketilen kaloriler yakılan kalorilerle dengelenir. Bu, vücut ağırlığınızı koruyacağınız anlamına gelir.</p><p>CDC 'ye göre, kilonuzu koruyorsanız, kalori dengesindesiniz. Bu, her gün yaktığınız kalorinin aşağı yukarı aynı miktarını tükettiğiniz anlamına gelir. Kalori fazlalığınız varsa, yaktığınızdan daha fazla kalori yiyorsunuz ve kilo alacaksınız. Kalori açığınız varsa, yediğinizden daha fazla kalori yakıyorsunuz ve kilo vereceksiniz.</p><p>Reklamcılık<br> İnsanlar <a href="https://kalorihesabi.com/blog/10-ayda-30-kilo-nasil-verilir/">kilo vermek</a> istediklerinde genellikle kalori açığı vermeye çalışırlar. Ancak kalori açığı olan bir kişinin bile işlev görmesi ve sağlıklı kalması için yeterli kalori tüketmesi gerekir. McDaniel, yeterli kalori tüketmenin kilo verme sürecinde kas kütlesinin korunmasına yardımcı olduğunu söyledi. Ayrıca kilo kaybını sürdürülebilir hale getirmeye yardımcı olur.  "Birisi kilo vermek için kalorileri keserse, oradan nereye giderler? Bu, gitgide daha az yemeye devam ettikleri anlamına mı geliyor?” diye sordu.</p><p>Kilo verme sürecinde yeterli kalori tüketmek, sağlıklı bir metabolizma hızının korunması için de önemlidir. McDaniel,  "Kronik yetersiz yeme  - zamanla günde 800 veya 1.000 kalori yemek  - dinlenme metabolizma hızınızı düşürür, bu da ne kadar kalori yaktığınızı ve metabolik makinenizi etkiler   dedi.</p>
+            </form>
+            <p>Günlük kalori hesaplama yap, kalori hesabı sonucunda yiyeceklerin kalorilerine dikkat et, kilonu ve
+              sağlığını koru.</p>
+            <h2>Kalori Hesabı</h2>
+            <p>Kalori bir enerji birimidir. Tarihsel olarak, bilim adamları "kaloriyi kömür veya gaz gibi çeşitli
+              kaynaklardan gelebilecek bir enerji veya ısı birimi olarak tanımladılar. Besinsel anlamda, ister yağ,
+              ister protein, karbonhidrat veya şeker olsun, her tür gıda, insanların yaşaması ve işlev görmesi gereken
+              önemli kalori kaynaklarıdır. Farklı aktiviteler yaparak ne kadar kalori yaktığınızı izlemenizi sağlar.</p>
+            <p>Clayton, Missouri 'de kayıtlı bir beslenme uzmanı diyetisyen ve Beslenme ve Diyetetik Akademisi sözcüsü
+              Jennifer McDaniel, "Beynimiz, kaslarımız - vücudumuzdaki her hücre - optimal durumda çalışması için
+              enerjiye ihtiyaç duyar dedi. "Birincisi, vücudumuzu ve beynimizi doğru beslemek istiyoruz. Bu besinlerden
+              [kalorilerin sağladığı] yeterince almazsak, yağsız kas kütlesini kaybetmek, konsantre olamamak, günlük
+              olarak ihtiyacımız olan enerjiye sahip olamamak gibi olumsuz sonuçlar vardır.</p>
+            <h2>Kalori Fiziği</h2>
+            <p>1863 'te Journal of Nutrition 'da yayınlanan "History of the Calorie in Nutrition başlıklı bir makaleye
+              göre, kalori, 1 kilogram suyun sıcaklığını 0 'dan 1 santigrat dereceye çıkarmak için gereken ısı miktarı
+              olarak tanımlandı. 1925 'te kaloriler, fizikçiler tarafından bir Newton 'u bir metreye zorlamak için
+              gereken iş miktarını tanımlamak için tipik olarak kullanılan birimler olan joule cinsinden bilimsel olarak
+              tanımlandı. Bu nedenle, özellikle Avrupa ve Avustralya 'da bazen kalorilerin kilojul olarak
+              adlandırıldığını görürsünüz. Bir kalori 4,18 joule eşittir; 1 joule, bir kalorinin 0.000239006 'sına
+              eşittir.</p>
+            <p>Bir kaloriyi yapmak için gereken ısı miktarı farklı sıcaklıklarda farklılık gösterir, bu nedenle bilim
+              adamları su sıcaklıklarına göre farklı kalori türleri oluşturmaya karar verdiler. Farklı sıcaklıklar, gram
+              kalori veya 15 derece kalori olarak da adlandırılan küçük kalori gibi farklı kalori türleri verir. Bu
+              kalori, 1 gram suyun sıcaklığını 14,5 'ten 15,5 santigrat dereceye çıkarmak için gereken ısı miktarını
+              ifade eder.</p>
+            <p>Beslenmede bir kalori aslında bu küçük kalorilerin 1.000 'i kadardır. Bazı araştırmacılar kilokalori
+              terimini 1000 küçük kalorilik besin birimine atıfta bulunmak için kullanırlar. 1.000 küçük kalorilik bu
+              birimlere bazen büyük kaloriler, diyet kalorileri, besin kalorileri, yiyecek kalorileri ve büyük C
+              harfiyle Kaloriler de denir.</p>
+            <p>Bu nedenle, Amerikalıların gıda etiketlerinde gördükleri aslında kilokalori veya kilojul 'dür. ABD Tarım
+              Bakanlığı orta boy bir elmanın 95 kalori içerdiğini söylediğinde, aslında 95 kilokalori içeriyor. (Bu
+              makale kilokalori yerine kalori terimini kullanır.)</p>
+            <p>Farklı makrobesin türleri standart miktarda kaloriye sahiptir. Bir gram protein 4 kaloridir. Bir gram
+              karbonhidratta 4 kalori vardır. McKinley Sağlık Merkezi 'ne göre bir gram yağın 9 kalorisi vardır.</p>
+            <h2>İnsanlar Her Gün Kaç Kalori Yemeli?</h2>
+            <p>McDaniel, bir kişinin günde kaç kaloriye ihtiyaç duyduğunun, bireyin aktivite düzeyine ve bir doktor veya
+              diyetisyenin ofisinde ölçülebilen dinlenme metabolik hızına bağlı olduğunu söyledi. “Önemli besinler ve
+              mikro besinlerin dengesini sağladıklarından emin olmak için erkeklerin 1.500 kaloriden ve kadınların 1.200
+              kaloriden daha az yememesi gerektiğine dair geleneksel bir bilgelik var.”</p>
+            <p>Ulusal Sağlık Enstitüleri (NIH), çeşitli yaşlar ve aktivite seviyeleri için genel kalori gereksinimleri
+              yönergeleri sağlar. Orta yaşlı orta derecede aktif bir kadın günde 2.000 kalori tüketmelidir. Orta yaşta
+              orta derecede aktif bir erkek günde 2.400 ila 2.600 kalori tüketmelidir.</p>
+            <p>Ulusal Bilimler, Mühendislik ve Tıp Akademileri tarafından yayınlanan resmi Diyet Referans Alımları
+              (DRI), bir yetişkin için kalorinin yüzde 45 ila 65 'inin karbonhidratlardan, yüzde 20 ila 25 'inin yağdan
+              ve yüzde 10 ila 35 'inin alınması gerektiğini önermektedir. proteinden gelir. Çocukların kalorilerinin
+              yüzde 25 ila 40 'ı arasında daha yüksek oranda yağa ihtiyaçları vardır. Toplam kalorinin yüzde 25 'inden
+              fazlası ilave şekerlerden gelmemelidir.</p>
+            <p>McDaniel, bu genel yönergelerin ötesinde, ihtiyaç duyulan makro besin miktarının bireyin aktivite
+              düzeyine bağlı olduğunu söyledi. Örneğin bir sporcunun daha fazla karbonhidrata ihtiyacı vardır. Yemek
+              tercihleri ​​de rol oynar. “Ekmeği seviyorum, bu yüzden asla düşük karbonhidratlı bir diyete gitmem çünkü
+              sürdürülebilir bir yaklaşım istiyorum” dedi.</p>
+            <h2>Yüksek Kalorili Yiyecekler Nelerdir?</h2>
+            <p>Mayo Clinic 'e göre, yüksek kalorili veya kalorik olarak yoğun olarak kabul edilen yiyecekler, porsiyon
+              boyutlarına göre yüksek miktarda kaloriye sahiptir. Yağlar, tereyağı ve diğer yağlar; kızarmış yiyecekler;
+              ve şekerli tatlılar yüksek kalorili yiyeceklerdir. Yüksek kalorili yiyecekler genellikle abur cuburla
+              ilişkilendirilirken, bazılarının besin değeri de yüksektir.</p>
+            <p>Kalorisi yüksek sağlıklı besinler arasında avokado (her biri 227 kalori), kinoa (fincan başına 222
+              kalori), fındık (fıstık başına 828 kalori), zeytinyağı (yemek kaşığı başına 119 kalori), kepekli tahıllar
+              ve ölçülü olarak, USDA Beslenme Veritabanına göre bitter çikolata (bar başına 648 kalori).</p>
+            <p>Kuru üzüm, bazı insanları şaşırtabilecek yüksek kalorili yiyeceklere örnektir; Mayo Clinic 'e göre 1
+              fincan üzüm yiyebilir ve çeyrek fincan kuru üzümle aynı miktarda kalori alabilirsiniz. Kuru meyveler
+              genellikle kalori bakımından yoğundur; Bu nedenle çok kalori yakan yürüyüşçüler arasında popülerdirler.
+            </p>
+            <h2>Düşük Kalorili Yiyecekler Nelerdir?</h2>
+            <p>Düşük kalorili olarak kabul edilen yiyecekler, porsiyon boyutlarına göre düşük miktarda kaloriye
+              sahiptir. Meyveler ve özellikle sebzeler genellikle nispeten düşük kalorilidir. Örneğin, 2 bardak kıyılmış
+              marul veya ıspanak 16 kalori, büyük bir kereviz sapı 10 kalori, 1 büyük mısır başağı 123 kalori, 1 bardak
+              brokoli 15 kalori ve bir portakal 70 kalori içeriyor.</p>
+            <h2>Boş Kalori Nedir?</h2>
+            <p>Boş kaloriler çok az besin içerir veya hiç içermez. USDA tarafından yürütülen Benim Tabağımı Seç
+              kampanyasına göre, genellikle ilave şekerlerden ve katı yağlardan gelirler. Katı yağlar, tereyağı, katı
+              yağ ve bazı etlerde bulunan yağlar gibi oda sıcaklığında katılaşan yağlardır. Doğal olarak oluşabilirler,
+              ancak genellikle gıdalara eklenirler.</p>
+            <p>Birçok tipik Amerikan yemeği çok fazla boş kaloriye sahiptir. Tabağımı Seç, boş kalorisi yüksek popüler
+              yiyeceklere örnek olarak dondurma, gazlı içecekler, peynir, pizza ve sosisli sandviç ve sosis gibi
+              işlenmiş etleri listeler. Peynir ve pizza gibi bu yiyeceklerden bazıları da besin maddeleri içerir (peynir
+              yüksek oranda kalsiyum içerir ve protein içerir; pizza sosları, sosları ve kabukları besin içerebilir),
+              ancak gazlı içecekler ve çoğu şekerleme gibi diğer yiyecekler yalnızca boş kalori içerir.</p>
+            <h2>Kalori ve Kilo Kaybı</h2>
+            <p>Yeterli kalori tüketmek önemli olsa da, kalori saymak ve kesmek birçok insanın kilo vermesine yardımcı
+              olabilir. Kaloriler fiziksel aktivite ile harcanır. Örneğin, Runner 's World dergisine göre bir mil koşmak
+              yaklaşık 112 kalori yakabilir. Hastalık Kontrol ve Önleme Merkezleri (CDC), kalori dengesi olarak yakılan
+              kalori ve tüketilen kalori dengesini ifade eder. Bir terazi gibi çalışır; Dengede olduğunuzda, tüketilen
+              kaloriler yakılan kalorilerle dengelenir. Bu, vücut ağırlığınızı koruyacağınız anlamına gelir.</p>
+            <p>CDC 'ye göre, kilonuzu koruyorsanız, kalori dengesindesiniz. Bu, her gün yaktığınız kalorinin aşağı
+              yukarı aynı miktarını tükettiğiniz anlamına gelir. Kalori fazlalığınız varsa, yaktığınızdan daha fazla
+              kalori yiyorsunuz ve kilo alacaksınız. Kalori açığınız varsa, yediğinizden daha fazla kalori yakıyorsunuz
+              ve kilo vereceksiniz.</p>
+            <p>Reklamcılık<br> İnsanlar <a href="https://kalorihesabi.com/blog/10-ayda-30-kilo-nasil-verilir/">kilo
+                vermek</a> istediklerinde genellikle kalori açığı vermeye çalışırlar. Ancak kalori açığı olan bir
+              kişinin bile işlev görmesi ve sağlıklı kalması için yeterli kalori tüketmesi gerekir. McDaniel, yeterli
+              kalori tüketmenin kilo verme sürecinde kas kütlesinin korunmasına yardımcı olduğunu söyledi. Ayrıca kilo
+              kaybını sürdürülebilir hale getirmeye yardımcı olur. "Birisi kilo vermek için kalorileri keserse, oradan
+              nereye giderler? Bu, gitgide daha az yemeye devam ettikleri anlamına mı geliyor?” diye sordu.</p>
+            <p>Kilo verme sürecinde yeterli kalori tüketmek, sağlıklı bir metabolizma hızının korunması için de
+              önemlidir. McDaniel, "Kronik yetersiz yeme - zamanla günde 800 veya 1.000 kalori yemek - dinlenme
+              metabolizma hızınızı düşürür, bu da ne kadar kalori yaktığınızı ve metabolik makinenizi etkiler dedi.</p>
           </div>
         </div>
         <div class="hidden lg:flex align-top justify-start h-full w-3/12 col-span-3 absolute right-0">
@@ -187,7 +279,7 @@
                     class="fa-brands fa-pinterest"></i></a></li>
               <li> <a href="https://medium.com/@kalorihesabicom" target="_blank" rel="nofollow"><i
                     class="fa-solid fa-link"></i></a></li>
-            </ul> 
+            </ul>
           </div>
         </div>
       </section>
@@ -198,7 +290,7 @@
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-4">
         <div class="">
-          <a href="/"><img class="w-36" src="public/img/logo.png" /></a>
+          <a href="/dist/index.html"><img class="w-36" src="public/img/logo.png" /></a>
           <p class="text-xs mt-3 w-64">
             Kalori Hesabı sitemizin amacı kalori hesaplama, ideal kilo hesaplama ve yediğimiz yiyeceklerin kaç kalori
             olduğunu sizlere doğru bir biçimde aktarmaktır.

@@ -875,7 +875,7 @@ ul.page-numbers {
   padding-bottom: 0.75rem;
   font-weight: 600;
 }
-.content-in p a {
+.content-in p a,  .content-in a {
   border-bottom-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -884,7 +884,7 @@ ul.page-numbers {
   font-family: Noto Serif, serif;
   font-weight: 700;
 }
-.content-in p a:hover {
+.content-in p a:hover,  .content-in a:hover {
   border-width: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(6 6 6 / var(--tw-bg-opacity));
@@ -893,6 +893,11 @@ ul.page-numbers {
   padding-top: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.category-description strong {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
 }
 .visible {
   visibility: visible;
@@ -936,17 +941,20 @@ ul.page-numbers {
 .col-auto {
   grid-column: auto;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .col-span-8 {
   grid-column: span 8 / span 8;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .col-span-7 {
   grid-column: span 7 / span 7;
+}
+.col-span-10 {
+  grid-column: span 10 / span 10;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -993,14 +1001,14 @@ ul.page-numbers {
 .mb-7 {
   margin-bottom: 1.75rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mt-10 {
   margin-top: 2.5rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -1074,6 +1082,9 @@ ul.page-numbers {
 .h-16 {
   height: 4rem;
 }
+.h-screen {
+  height: 100vh;
+}
 .max-h-48 {
   max-height: 12rem;
 }
@@ -1082,6 +1093,9 @@ ul.page-numbers {
 }
 .max-h-52 {
   max-height: 13rem;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-2 {
   width: 0.5rem;
@@ -1423,6 +1437,10 @@ ul.page-numbers {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1431,23 +1449,23 @@ ul.page-numbers {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
-.font-bold {
-  font-weight: 700;
-}
 .font-semibold {
   font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-medium {
   font-weight: 500;
@@ -1733,6 +1751,10 @@ ul.page-numbers {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1751,6 +1773,10 @@ ul.page-numbers {
 
   .lg\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {

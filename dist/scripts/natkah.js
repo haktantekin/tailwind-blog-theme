@@ -2,14 +2,14 @@
 // window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-CLHYN8KHT0');
 // Analytics
 
-// caltoKilo();
-
 function mobileButton() {
   let nav = document.querySelector('.js-top-nav');
-  if (nav.style.display === "none") {
-    nav.style.display = "block";
+  if (nav.matches('.hidden')) {
+    nav.classList.remove('hidden');
+    console.log(1);
   } else {
-    nav.style.display = "none";
+    nav.classList.add('hidden');
+    console.log(2);
   }
 }
 
