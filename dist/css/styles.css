@@ -713,12 +713,31 @@ video {
     line-height: 2rem;
   }
 }
+.sub-cat-list ul {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+@media (min-width: 576px) {
+
+  .sub-cat-list ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 992px) {
+
+  .sub-cat-list ul {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
 footer nav li {
   margin-bottom: 0.5rem;
 }
 ul.page-numbers {
   margin-bottom: 1.75rem;
+  margin-top: 2.5rem;
   display: inline-flex;
+  width: 100%;
   -moz-columns: 1;
        columns: 1;
   flex-direction: row;
@@ -894,7 +913,7 @@ ul.page-numbers {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.category-description strong {
+.category-description h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: block;
@@ -1029,12 +1048,6 @@ ul.page-numbers {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1049,6 +1062,12 @@ ul.page-numbers {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .mt-0 {
   margin-top: 0px;
@@ -1578,102 +1597,82 @@ ul.page-numbers {
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-
 .placeholder\:text-white::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 .placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
 }
-
 .before\:top-0::before {
   content: var(--tw-content);
   top: 0px;
 }
-
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
 }
-
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
 }
-
 .before\:bg-black::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-
 .before\:bg-opacity-40::before {
   content: var(--tw-content);
   --tw-bg-opacity: 0.4;
 }
-
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-
 .hover\:bg-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(6 6 6 / var(--tw-bg-opacity));
 }
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
-
 .hover\:text-main:hover {
   --tw-text-opacity: 1;
   color: rgb(40 141 171 / var(--tw-text-opacity));
 }
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 .hover\:transition-all:hover {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 .hover\:ease-in-out:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hover\:before\:bg-opacity-10:hover::before {
   content: var(--tw-content);
   --tw-bg-opacity: 0.1;
 }
-
 .focus\:bg-gray:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
-
 @media (min-width: 576px) {
 
   .sm\:grid-cols-2 {
@@ -1688,7 +1687,6 @@ ul.page-numbers {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:mt-0 {
@@ -1707,24 +1705,12 @@ ul.page-numbers {
     display: none;
   }
 
-  .md\:h-28 {
-    height: 7rem;
+  .md\:h-44 {
+    height: 11rem;
   }
 
   .md\:h-\[40rem\] {
     height: 40rem;
-  }
-
-  .md\:h-36 {
-    height: 9rem;
-  }
-
-  .md\:h-48 {
-    height: 12rem;
-  }
-
-  .md\:h-44 {
-    height: 11rem;
   }
 
   .md\:w-52 {
@@ -1788,7 +1774,6 @@ ul.page-numbers {
     line-height: 1;
   }
 }
-
 @media (min-width: 992px) {
 
   .lg\:col-span-7 {

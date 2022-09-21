@@ -57,12 +57,16 @@
     @apply text-xl sm:text-xl lg:text-2xl font-medium capitalize border-0
   }
 
+  .sub-cat-list ul{
+    @apply grid gap-2 grid-cols-1 sm:grid-cols-3 lg:grid-cols-5
+  }
+
   footer nav li {
     @apply mb-2
   }
 
   ul.page-numbers{
-    @apply inline-flex mb-7 columns-1 justify-center flex-row flex-wrap items-center gap-2
+    @apply inline-flex mb-7 columns-1 justify-center flex-row flex-wrap items-center gap-2 w-full mt-10
   }
   .page-numbers{
     @apply mt-8 md:mt-0
@@ -138,7 +142,7 @@
     @apply font-noto font-bold pb-1 border-b border-dashed border-dark hover:bg-dark hover:text-white hover:pl-2 hover:pr-2 hover:pt-1 hover:border-0
   }
   
-  .category-description strong{
+  .category-description h2{
     @apply mt-4 mb-4 block
   }
   .top-nav ul{
