@@ -899,6 +899,22 @@ ul.page-numbers {
   margin-bottom: 1rem;
   display: block;
 }
+.top-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+
+  .top-nav ul {
+    flex-direction: row;
+  }
+}
+.top-nav ul li a:hover {
+  font-weight: 700;
+}
 .visible {
   visibility: visible;
 }
@@ -1218,14 +1234,14 @@ ul.page-numbers {
 .gap-4 {
   gap: 1rem;
 }
-.gap-5 {
-  gap: 1.25rem;
-}
 .gap-2 {
   gap: 0.5rem;
 }
 .gap-0 {
   gap: 0px;
+}
+.gap-5 {
+  gap: 1.25rem;
 }
 .gap-1 {
   gap: 0.25rem;
@@ -1689,10 +1705,6 @@ ul.page-numbers {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:justify-center {

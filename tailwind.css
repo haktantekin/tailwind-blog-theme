@@ -141,4 +141,10 @@
   .category-description strong{
     @apply mt-4 mb-4 block
   }
+  .top-nav ul{
+    @apply flex justify-center items-center gap-5 flex-col md:flex-row
+  }
+  .top-nav ul li a{
+    @apply hover:font-bold
+  }
 }
