@@ -145,10 +145,22 @@
   .category-description h2{
     @apply mt-4 mb-4 block
   }
+  
   .top-nav ul{
     @apply flex justify-center items-center gap-5 flex-col md:flex-row
   }
+
   .top-nav ul li a{
     @apply hover:font-bold
+  }
+
+  .comment-form p{
+    @apply flex flex-col
+  }
+  .comment-form input{
+    @apply p-3 mt-3 mb-3
+  }
+  .comment-form textarea{
+    @apply focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none text-base border border-gray p-3 mt-3 mb-3
   }
 }
