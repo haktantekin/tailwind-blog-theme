@@ -100,8 +100,12 @@
     @apply font-bold text-dark capitalize
   }
 
-  .content-in p{
+  .content-in p, .category-description p{
    @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8
+  }
+
+  .category-description li{
+    @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8 list-disc list-inside
   }
 
   .content-in h2{
