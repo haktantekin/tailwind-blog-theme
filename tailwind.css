@@ -92,8 +92,12 @@
     @apply mb-4
   }
 
+  .lwptoc_items > .lwptoc_itemWrap{
+    @apply pt-5 pb-5 block
+  }
+
   .lwptoc_itemWrap{
-    @apply bg-gray p-5 rounded-md text-left leading-7 mt-6
+    @apply bg-gray pl-5 mt-2 mb-2 rounded-md text-left leading-7
   }
 
   .lwptoc_itemWrap a{
@@ -166,5 +170,11 @@
   }
   .comment-form textarea{
     @apply focus-visible:outline-0 focus:ring-transparent focus:outline-none focus:bg-transparent ring-transparent shadow-none text-base border border-gray p-3 mt-3 mb-3
+  }
+  .content-in ul{
+    @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8
+  }
+  .content-in li{
+    @apply list-disc list-inside
   }
 }
