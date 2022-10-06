@@ -177,4 +177,10 @@
   .content-in li{
     @apply list-disc list-inside
   }
+  ul.content-cal-list{
+    @apply m-0
+  }
+  ul.content-cal-list li{
+    @apply list-none
+  }
 }
