@@ -17,10 +17,10 @@
     @apply text-3xl font-garamond font-bold text-dark capitalize
   }
   h2{
-    @apply text-xl sm:text-2xl lg:text-3xl font-garamond font-bold text-dark mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-4 capitalize
+    @apply text-xl sm:text-2xl lg:text-3xl font-open font-black text-dark mb-2 md:mb-7 border-gray border-dashed border-b-2 pb-4
   }
   h3{
-    @apply text-xl sm:text-xl lg:text-lg font-noto font-medium text-dark pr-4 capitalize
+    @apply text-lg font-open font-bold text-dark pr-4
   }
 
   section, nav, footer{
@@ -105,11 +105,11 @@
   }
 
   .content-in p, .category-description p{
-   @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8
+   @apply mt-4 mb-4 ml-auto mr-auto text-base leading-8 font-medium tracking-wider
   }
 
   .category-description li{
-    @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8 list-disc list-inside
+    @apply mt-4 mb-4 ml-auto mr-auto text-base leading-8 font-medium list-disc list-inside
   }
 
   .content-in h2{
@@ -175,7 +175,7 @@
     @apply mt-4 mb-4 ml-auto mr-auto text-sm leading-8
   }
   .content-in li{
-    @apply list-disc list-inside
+    @apply list-disc list-inside text-base leading-7 font-medium
   }
   ul.content-cal-list{
     @apply m-0

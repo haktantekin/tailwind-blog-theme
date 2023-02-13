@@ -20,6 +20,8 @@ module.exports = {
       fontFamily: {
         "garamond": ['EB Garamond, serif'],
         "relaway": ['Raleway, sans-serif'],
+        "open": ['Open Sans, sans-serif'],
+        "roboto": ['Roboto, sans-serif'],
         "noto": ['Noto Serif, serif'],
       },
       colors: {
